@@ -1,0 +1,712 @@
+{
+    "ocr_type": "receipts",
+    "request_id": "P_89.187.180.57_m5iu01ha_3ku",
+    "ref_no": "ocr_python_123",
+    "file_name": "20250104_184340.png",
+    "request_received_on": 1736034303360,
+    "success": true,
+    "image_width": 4032,
+    "image_height": 3024,
+    "image_rotation": -1.582,
+    "recognition_completed_on": 1736034304384,
+    "receipts": [
+        {
+            "merchant_name": "MARKET BASKET",
+            "merchant_address": "69 Central Street",
+            "merchant_phone": "+1 603-890-0059",
+            "merchant_website": null,
+            "merchant_tax_reg_no": null,
+            "merchant_company_reg_no": null,
+            "region": null,
+            "mall": null,
+            "country": "US",
+            "state": "NH",
+            "city": "Salem",
+            "zip": "03079",
+            "receipt_no": null,
+            "date": "2025-01-04",
+            "time": null,
+            "items": [
+                {
+                    "amount": 3.69,
+                    "category": null,
+                    "description": "679844104658 DW CHOCOLATE CHIP",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.99,
+                    "category": null,
+                    "description": "095705135935 COCOA/COOKIE",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 9.49,
+                    "category": null,
+                    "description": "079900001691 WYMAN BLUEBERRY 3LB",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.5,
+                    "category": null,
+                    "description": "819573010275 H-TOT BBRY-PEAR-BEET",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.5,
+                    "category": null,
+                    "description": "819573015928 HAPPY BABY SPR MRN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.49,
+                    "category": null,
+                    "description": "015000070519 GER 1ST NGM OATMEAL",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.67,
+                    "category": null,
+                    "description": "023923320116 EB PUREE APL/PCH/OTM",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.25,
+                    "category": null,
+                    "description": "052200172155 BNJ ST2 APL-CIN-GRAN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.58,
+                    "category": null,
+                    "description": "015000073657 GER 2ND PR/CIN/OAT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.99,
+                    "category": null,
+                    "description": "714760330283 SUN DELIGHT PITTED",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.0,
+                    "category": null,
+                    "description": "075720968923 POLAND SPRINGS 24PK",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.25,
+                    "category": null,
+                    "description": "052200172322 BEACHNUT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.49,
+                    "category": null,
+                    "description": "048001013742 HELM MAYO",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.99,
+                    "category": null,
+                    "description": "762111206114 STRBUCK COLOMBIAN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.79,
+                    "category": null,
+                    "description": "015000074449 GERBER",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 9.99,
+                    "category": null,
+                    "description": "017400106973 CAROLINA BASMTI POLY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "071022313485 PITTED DATES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.25,
+                    "category": null,
+                    "description": "027000852507 HUNT NO SALT SAUCE",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "072427000123 FANTINI SPLIT TOP",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.0,
+                    "category": null,
+                    "description": "016000222427 NATURE VALLEY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.95,
+                    "category": null,
+                    "description": "049705343043 MB DISTILLED",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.49,
+                    "category": null,
+                    "description": "053100338832 AFRESH EXT-CLN WHITE",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.69,
+                    "category": null,
+                    "description": "206174000000 BBQ CHIX",
+                    "flags": " T",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 8.58,
+                    "category": null,
+                    "description": "025293600393 SILK PLAIN SOY MILK",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "079403114867 RH ORIGINAL ORGANIC",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.49,
+                    "category": null,
+                    "description": "049705408681 WHOLE RAW CASHEWS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.65,
+                    "category": null,
+                    "description": "94011ORGANIC BANANAS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "072180634290 RB FOUR CHEESE PIZZA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.27,
+                    "category": null,
+                    "description": "4688RED PEPPERS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.29,
+                    "category": null,
+                    "description": "4065GREEN PEPPERS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.18,
+                    "category": null,
+                    "description": "4011BANANAS CHIQUITA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.17,
+                    "category": null,
+                    "description": "4011BANANAS CHIQUITA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "7750619000931 COTTON CANDY GRAPE",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.29,
+                    "category": null,
+                    "description": "4016RED DELICIOUS APPLES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.7,
+                    "category": null,
+                    "description": "4011BANANAS CHIQUITA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.17,
+                    "category": null,
+                    "description": "4727YELLOW POTATOES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.8,
+                    "category": null,
+                    "description": "4417ANJOU PEARS RED",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "4225HASS AVOCADOS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.99,
+                    "category": null,
+                    "description": "812049004402 NATURIPE RASPBERRY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.99,
+                    "category": null,
+                    "description": "852575008437 #1 MEX CLMSH SBERRY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.39,
+                    "category": null,
+                    "description": "3283HONEY CRISP APPLE",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.99,
+                    "category": null,
+                    "description": "629307040146 3LB YELLOW CHARMERS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.41,
+                    "category": null,
+                    "description": "4067ZUCCHINI SQUASH",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.29,
+                    "category": null,
+                    "description": "037102170102 SLICED BABY BELLAS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.0,
+                    "category": null,
+                    "description": "3603SWEET TANGO APPLES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.94,
+                    "category": null,
+                    "description": "4816YAMS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "091636000021 3LB PEELZ CAL",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "056210981004 5LB PEI RUSSETS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.0,
+                    "category": null,
+                    "description": "049705159712 MB MB HEAVY DUTY",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "049705158586 MB 200Z BOWL",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.99,
+                    "category": null,
+                    "description": "190569123583 GG SPIRAL ZUCCHINI",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.19,
+                    "category": null,
+                    "description": "049705693735 MB CUT SQUASH POLY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                }
+            ],
+            "currency": "USD",
+            "total": 168.56,
+            "subtotal": 176.74,
+            "tax": 0.4,
+            "service_charge": null,
+            "tip": null,
+            "payment_method": null,
+            "payment_details": null,
+            "credit_card_type": null,
+            "credit_card_number": null,
+            "ocr_text": "     MARKET BASKET\n             \"MORE FOR YOUR DOLLAR\"\n               69 Central Street\n                 Salem, NH 03079\n                 (603) 890-0059\n         Store Director: Brian Casassa\n                 Store: 084\n  Cashier:                  0840218-Trisha P\n  1/04/25                             9:54 AM\n                     Sale\n        BRKFST/BAGELS/JUICE\n  679844104658 DW CHOCOLATE CHIP 3.69 F\n               PANCAKE 18PK\n        DRY GOODS\n  095705135935 COCOA/COOKIE           5.99 F\n               PISTACHIO\n        FRUIT/COOL WHIP\n  079900001691 WYMAN BLUEBERRY 3LB 9.49 F\n       GROCERY\n 819573010275 H-TOT BBRY-PEAR-BEET    1.50 F\n 819573015928 HAPPY BABY SPR MRN      4.50 F\n               APL/ACIA\n                3 @ 2/3.00\n 015000070519 GER 1ST NGM OATMEAL     5.49 F\n 023923320116 EB PUREE APL/PCH/OTM    1.67 F\n 052200172155 BNJ ST2 APL-CIN-GRAN    1.25 F\n 015000073657 GER 2ND PR/CIN/OAT      3.58 F\n                2 @ 1.79\n 714760330283 SUN DELIGHT PITTED 3.99 F\n               DATES\n 075720968923 POLAND SPRINGS 24PK 4.00 F\n 052200172322 BEACHNUT                1.25 F\n 048001013742 HELM MAYO               4.49 F\n 762111206114 STRBUCK COLOMBIAN       3.99 F\n 015000074449 GERBER                  1.79 F\n 017400106973 CAROLINA BASMTI POLY 9.99 F\n 071022313485 PITTED DATES            2.99 F\n 027000852507 HUNT NO SALT SAUCE      1.25 F\n 072427000123 FANTINI SPLIT TOP       3.00 F\n               ROLLS\n 016000222427 NATURE VALLEY          2.00 F\n               DBLCHOC GRANLA BAR\n 049705343043 MB DISTILLED           4.95 F\n                5 @ 0.99\n       HABA\n 053100338832 AFRESH EXT-CLN WHITE 3.49\n       MARKETS KITCHEN\n 206174000000 BBQ CHIX               4.69 T\n       MILK\n 025293600393 SILK PLAIN SOY MILK 8.58 F\n                2 @ 4.29\n 079403114867 RH ORIGINAL ORGANIC 2.99 F\n       NATURAL SNACKS\n 049705408681 WHOLE RAW CASHEWS 5.49 F\n       ORGANIC FRUIT\n 94011         ORGANIC BANANAS        1.65 F\n                2.390 lb @ $0.69/lb\n       PIZZA\n 072180634290 RB FOUR CHEESE PIZZA 4.99 F\n       PRODUCE DEPT\n 4688          RED PEPPERS            2.27 F\n                0.570 lb @$3.99/lb\n 4065          GREEN PEPPERS          3.29 F\n                1.100 lb @ $2.99/lb\n 4011          BANANAS CHIQUITA       1.18 F\n                2.400 lb @ $0.49/lb\n 4011          BANANAS CHIQUITA       1.17 F\n                2.390 lb @ $0.49/lb\n 7750619000931 COTTON CANDY GRAPE     4.99 F\n 4016          RED DELICIOUS APPLES   1.29 F\n                1.300 lb @$0.99/lb\n 4011          BANANAS CHIQUITA       0.70 F\n                1.430 lb @ $0.49/lb\n 4727          YELLOW POTATOES        3.17 F\n                2.460 lb @$1.29/lb\n 4417          ANJOU PEARS RED        0.80 F\n                0.400 lb @ $1.99/lb\n 4225          HASS AVOCADOS          3.00 F\n                2 @ 2/3.00\n 812049004402 NATURIPE RASPBERRY      3.99 F\n 852575008437 #1 MEX CLMSH SBERRY     3.99 F\n 3283          HONEY CRISP APPLE      2.39 F\n                1.200 lb @ $1.99/lb\n 629307040146 3LB YELLOW CHARMERS     5.99 F\n 4067          ZUCCHINI SQUASH        1.41 F\n                1.420 lb @$0.99/lb\n 037102170102 SLICED BABY BELLAS      2.29 F\n 3603          SWEET TANGO APPLES     1.00 F\n               0.500 lb @$1.99/lb\n 4816          YAMS                   1.94 F\n                1.960 lb @ $0.99/lb\n 091636000021 3LB PEELZ CAL           4.99 F\n              CLEMENTINES\n 056210981004 5LB PEI RUSSETS         2.99 F\n      TAX GROCERY\n 049705159712 MB MB HEAVY DUTY        2.00\n              SPOON\n 049705158586 MB 200Z BOWL            2.99\n      VEGETABLES\n 190569123583 GG SPIRAL ZUCCHINI      3.99 F\n 049705693735 MB CUT SQUASH POLY      2.19 F\n        SUBTOTAL                       176.74\n        NH 8.5 Prepared Food Tax         0.40\n        TOTAL                          177.14\n        WIC EBT ELIGIBLE                 8.58\n        E-WIC                            8.58\n        Debit                          168.56\n        TOTAL TENDERED                 177.14\n        Change                           0.00",
+            "ocr_confidence": 97.94,
+            "width": 783,
+            "height": 3939,
+            "avg_char_width": 17.9395,
+            "avg_line_height": 28.702,
+            "conf_amount": 74,
+            "source_locations": {
+                "date": [
+                    [
+                        {
+                            "y": 1852,
+                            "x": 357
+                        },
+                        {
+                            "y": 1724,
+                            "x": 354
+                        },
+                        {
+                            "y": 1723,
+                            "x": 381
+                        },
+                        {
+                            "y": 1851,
+                            "x": 384
+                        }
+                    ]
+                ],
+                "total": [
+                    [
+                        {
+                            "y": 1173,
+                            "x": 3806
+                        },
+                        {
+                            "y": 1055,
+                            "x": 3807
+                        },
+                        {
+                            "y": 1055,
+                            "x": 3835
+                        },
+                        {
+                            "y": 1173,
+                            "x": 3834
+                        }
+                    ]
+                ],
+                "subtotal": [
+                    [
+                        {
+                            "y": 1177,
+                            "x": 3619
+                        },
+                        {
+                            "y": 1061,
+                            "x": 3619
+                        },
+                        {
+                            "y": 1061,
+                            "x": 3650
+                        },
+                        {
+                            "y": 1177,
+                            "x": 3650
+                        }
+                    ]
+                ],
+                "merchant_name": [
+                    [
+                        {
+                            "y": 1824,
+                            "x": 19
+                        },
+                        {
+                            "y": 1140,
+                            "x": 9
+                        },
+                        {
+                            "y": 1139,
+                            "x": 72
+                        },
+                        {
+                            "y": 1823,
+                            "x": 82
+                        }
+                    ]
+                ],
+                "doc": [
+                    [
+                        {
+                            "y": 1927,
+                            "x": -177
+                        },
+                        {
+                            "y": 1065,
+                            "x": -187
+                        },
+                        {
+                            "y": 1016,
+                            "x": 4145
+                        },
+                        {
+                            "y": 1877,
+                            "x": 4155
+                        }
+                    ]
+                ],
+                "tax": [
+                    [
+                        {
+                            "y": 1142,
+                            "x": 3655
+                        },
+                        {
+                            "y": 1061,
+                            "x": 3656
+                        },
+                        {
+                            "y": 1061,
+                            "x": 3686
+                        },
+                        {
+                            "y": 1142,
+                            "x": 3685
+                        }
+                    ]
+                ],
+                "merchant_address": [
+                    [
+                        {
+                            "y": 1648,
+                            "x": 127
+                        },
+                        {
+                            "y": 1336,
+                            "x": 121
+                        },
+                        {
+                            "y": 1335,
+                            "x": 149
+                        },
+                        {
+                            "y": 1647,
+                            "x": 155
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}

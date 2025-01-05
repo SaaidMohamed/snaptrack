@@ -1,0 +1,452 @@
+{
+    "ocr_type": "receipts",
+    "request_id": "P_89.187.180.57_m5itpew6_w64",
+    "ref_no": "ocr_python_123",
+    "file_name": "20250101_133618.png",
+    "request_received_on": 1736033807527,
+    "success": true,
+    "image_width": 1164,
+    "image_height": 3656,
+    "image_rotation": 0,
+    "recognition_completed_on": 1736033808701,
+    "receipts": [
+        {
+            "merchant_name": "MARKET BASKET",
+            "merchant_address": "69 Central Street",
+            "merchant_phone": "+1 603-890-0059",
+            "merchant_website": null,
+            "merchant_tax_reg_no": null,
+            "merchant_company_reg_no": null,
+            "region": null,
+            "mall": null,
+            "country": "US",
+            "state": "NH",
+            "city": "Salem",
+            "zip": "03079",
+            "receipt_no": null,
+            "date": "2024-12-23",
+            "time": null,
+            "items": [
+                {
+                    "amount": 10.99,
+                    "category": null,
+                    "description": "691715282746 CRAB RANGOON",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 17.89,
+                    "category": null,
+                    "description": "070366068204 16/20 COOKED SHRIMP",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 8.99,
+                    "category": null,
+                    "description": "079900001868 WYMAN STRAWBERRY 3LB",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.0,
+                    "category": null,
+                    "description": "075656003064 MAGIC GROW AQUARIUM",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 7.99,
+                    "category": null,
+                    "description": "071022321190 MARIANI DATE",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.5,
+                    "category": null,
+                    "description": "071169286642 BETTY CROCKER GREEN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.58,
+                    "category": null,
+                    "description": "015000073657 GER 2ND PR/CIN/OAT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.79,
+                    "category": null,
+                    "description": "010300002987 EMERALD SGRC",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "819573013887 HAPPY BABY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "819573016635 HAPPY BABY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.25,
+                    "category": null,
+                    "description": "052200010310 BCH NAT CR/ZC/PR PCH",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.5,
+                    "category": null,
+                    "description": "048121184070 100% WHEAT MUFFIN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 6.0,
+                    "category": null,
+                    "description": "072427000123 FANTINI SPLIT TOP",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 7.49,
+                    "category": null,
+                    "description": "049705574713 CREAM CHEESE BROWNIE",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "040600721394 ICB IT'S VEGAN BOWL",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.29,
+                    "category": null,
+                    "description": "072180634290 RB FOUR CHEESE PIZZA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "4225HASS AVOCADOS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 8.27,
+                    "category": null,
+                    "description": "4023RED SEEDLESS GRAPES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.5,
+                    "category": null,
+                    "description": "7751262003942 BLUEBERRIES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "859426005003 1LB CLM STRAWBERRY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.28,
+                    "category": null,
+                    "description": "208829000000 STEM, CLUSTER TOMATO",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.92,
+                    "category": null,
+                    "description": "3603SWEET TANGO APPLES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.99,
+                    "category": null,
+                    "description": "091636000021 3LB PEELZ CAL",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "033383601014 2LB MEDIUM RED ONION",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.5,
+                    "category": null,
+                    "description": "761635202602 BLACKBERRIES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.6,
+                    "category": null,
+                    "description": "4011BANANAS CHIQUITA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.69,
+                    "category": null,
+                    "description": "049705160039 MB FACIAL",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.89,
+                    "category": null,
+                    "description": "049705693506 MB BROCCOLI FLORET",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                }
+            ],
+            "currency": "USD",
+            "total": 126.87,
+            "subtotal": 126.87,
+            "tax": null,
+            "service_charge": null,
+            "tip": null,
+            "payment_method": null,
+            "payment_details": null,
+            "credit_card_type": null,
+            "credit_card_number": null,
+            "ocr_text": "    MARKET BASKET\n             MORE FOR YOUR DOLLAR\"\n             69 Central Street\n               Salem, NH 03079\n               (603) 890-0059\n       Store Director: Brian Casassa\n                Store: 084\n Cashier:                  0840170-Lillian H\n 12/23/24                            6:08 PM\n                    Sale\n      FROZEN FISH\n 691715282746 CRAB RANGOON           10.99 F\n 070366068204 16/20 COOKED SHRIMP   17.89 F\n      FRUIT/COOL WHIP\n 079900001868 WYMAN STRAWBERRY 3LB 8.99 F\n      GEN/MERCHANDISE\n 075656003064 MAGIC GROW AQUARIUM 2.00\n      GROCERY\n 071022321190 MARIANI DATE           7.99 F\n 071169286642 BETTY CROCKER GREEN 1.50 F\n              SUGAR TUB\n 015000073657 GER 2ND PR/CIN/OAT     3.58 F\n               2 @ 1.79\n 010300002987 EMERALD SGRC           3.79 F\n 819573013887 HAPPY BABY             3.00 F\n               2 @ 2/3.00\n 819573016635 HAPPY BABY             3.00 F\n               2 @ 2/3.00\n 052200010310 BCH NAT CR/ZC/PR PCH   1.25 F\n 048121184070 100% WHEAT MUFFIN      2.50 F\n 072427000123 FANTINI SPLIT TOP      6.00 F\n              ROLLS\n               2 @ 2/6.00\n       IN-STORE BAKERY\n 049705574713 CREAM CHEESE BROWNIE 7.49 F\n       MARGARINE\n 040600721394 ICB IT'S VEGAN BOWL 2.99 F\n       PIZZA\n 072180634290 RB FOUR CHEESE PIZZA 5.29 F\n       PRODUCE DEPT\n 4225         HASS AVOCADOS           3.00 F\n               2 @ 2/3.00\n 4023         RED SEEDLESS GRAPES 8.27 F\n               2.370 lb @$3.49/lb\n 7751262003942 BLUEBERRIES            2.50 F\n 859426005003 1LB CLM STRAWBERRY      4.99 F\n              MX\n 208829000000 STEM, CLUSTER TOMATO 2.28 F\n              MEXICO\n               1 @ 2.28\n 3603         SWEET TANGO APPLES 0.92 F\n               0.460 lb @ $1.99/lb\n 091636000021 3LB PEELZ CAL           5.99 F\n               CLEMENTINES\n 033383601014 2LB MEDIUM RED ONION 2.99 F\n 761635202602 BLACKBERRIES            2.50 F\n 4011          BANANAS CHIQUITA       1.60 F\n                3.270 lb @ $0.49/lb\n       TAX GROCERY\n 049705160039 MB FACIAL               1.69\n       VEGETABLES\n 049705693506 MB BROCCOLI FLORET      1.89 F\n               POLY\n         SUBTOTAL                      126.87\n         TOTAL                         126.87\n        Debit                          126.87\n         TOTAL TENDERED                126.87\n        Change                           0.00",
+            "ocr_confidence": 98.31,
+            "width": 1077,
+            "height": 3590,
+            "avg_char_width": 24.5907,
+            "avg_line_height": 36.6827,
+            "conf_amount": 74,
+            "source_locations": {
+                "date": [
+                    [
+                        {
+                            "y": 502,
+                            "x": 56
+                        },
+                        {
+                            "y": 498,
+                            "x": 264
+                        },
+                        {
+                            "y": 533,
+                            "x": 265
+                        },
+                        {
+                            "y": 537,
+                            "x": 57
+                        }
+                    ]
+                ],
+                "total": [
+                    [
+                        {
+                            "y": 3338,
+                            "x": 982
+                        },
+                        {
+                            "y": 3339,
+                            "x": 1141
+                        },
+                        {
+                            "y": 3378,
+                            "x": 1141
+                        },
+                        {
+                            "y": 3377,
+                            "x": 982
+                        }
+                    ]
+                ],
+                "subtotal": [
+                    [
+                        {
+                            "y": 3287,
+                            "x": 981
+                        },
+                        {
+                            "y": 3287,
+                            "x": 1137
+                        },
+                        {
+                            "y": 3324,
+                            "x": 1137
+                        },
+                        {
+                            "y": 3324,
+                            "x": 981
+                        }
+                    ]
+                ],
+                "merchant_name": [
+                    [
+                        {
+                            "y": 17,
+                            "x": 100
+                        },
+                        {
+                            "y": 10,
+                            "x": 1074
+                        },
+                        {
+                            "y": 104,
+                            "x": 1075
+                        },
+                        {
+                            "y": 111,
+                            "x": 101
+                        }
+                    ]
+                ],
+                "doc": [
+                    [
+                        {
+                            "y": -165,
+                            "x": 7
+                        },
+                        {
+                            "y": -165,
+                            "x": 1191
+                        },
+                        {
+                            "y": 3783,
+                            "x": 1191
+                        },
+                        {
+                            "y": 3783,
+                            "x": 7
+                        }
+                    ]
+                ],
+                "merchant_address": [
+                    [
+                        {
+                            "y": 174,
+                            "x": 353
+                        },
+                        {
+                            "y": 178,
+                            "x": 790
+                        },
+                        {
+                            "y": 216,
+                            "x": 790
+                        },
+                        {
+                            "y": 211,
+                            "x": 353
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}
