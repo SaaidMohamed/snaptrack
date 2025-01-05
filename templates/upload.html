@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" >
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  rel="stylesheet" >
+        <link href="../static/styles.css" rel="stylesheet">
+        <title>Budget: {% block title %}{% endblock %}</title>
+    </head>
+
+    <body>
+        {% block main %}
+
+<div class="container">
+    <div class="box">
+        <h1>add file</h1>
+        <div class="upload-box">
+            <i class="fa fa-cloud-upload"></i>
+            <h3>Upload your file here</h3>
+            <h4>Files supported TXT, HTML, CSS</h4>
+            <span class="or">OR</span>
+            <div class="input-box">
+                <form method="POST" action="/upload1" enctype="multipart/form-data">
+                    <label for="click" type="submit" value="Upload">Browse
+                    <input type="file" id="click" name="image" accept="image/*">
+                    </label>
+                </form>
+            </div>
+            <span class="size">Maximum size: 2MB</span>
+        </div>
+        <div class="imgbox">
+            <div class="iconbox">
+                <i class=".fa-solid fa-file"></i>
+            </div>
+            <div class="info-box">
+                <p class="file-name">index.html</p>
+                <div class="file-size">1mb</div>
+            </div>
+            <button class="iconbox">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+</body>
+</html>

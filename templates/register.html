@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    register
+{% endblock %}
+
+{% block main %}
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+        }
+ 
+    </style>
+
+    <div class="registerFormContainer">
+        <div class="register-form">
+            <h2 class="login-formh2">Create an Account</h2>
+            <form id="registerForm" action="/register" method="post">
+                <div class="form-group">
+                    <label class="loginFormlabel" for="username">Username</label>
+                    <input class="loginForminpt" autocomplete="off" autofocus type="text" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label class="loginFormlabel" for="email">Email</label>
+                    <input class="loginForminpt" type="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label class="loginFormlabel" for="password">Password</label>
+                    <input class="loginForminpt" type="password" name="password" placeholder="Create a password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.confirmPassword.pattern = this.value;" required>
+                </div>
+                <div class="form-group">
+                    <label class="loginFormlabel" for="confirmPassword">Confirm Password</label>
+                    <input class="loginForminpt" type="password" name="confirmPassword" placeholder="Confirm your password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" required>
+                </div>
+                <button type="submit" class="loginFormbtn">Register</button>
+                <p class="register-link">
+                    Already have an account? <a href="/login">Log in here</a>
+                </p>
+            </form>
+        </div>
+    </div> 
+{% endblock %}

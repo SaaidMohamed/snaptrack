@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+
+        <!-- Image Preview Section -->
+        <div id="filePreviewMcontainer" class="filePreviewMcontainer">
+            <h2>Image Preview</h2>
+            <div id="filePreviewContainer" class="file-preview-container">
+                <img id="previewImage" src="" alt="File Preview">
+                <p id="fileName"></p>
+                <div class="filePreviewButtons">
+                    <button class="confirm-btn" onclick="confirmImage()">Process</button>
+                    <button class="retry-btn" onclick="retryUpload()">Retry</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Upload Section -->
+        <div id="fileUploadMcontainer" class="fileUploadMcontainer">
+            <h1>Upload or Take a Picture of Your Receipt</h1>
+
+            <button class="pictureBtn" onclick="openCamera()">
+                <span class="material-icons">camera_alt</span> Take a Picture
+            </button>
+
+            <label for="uploadInput" class="pictureBtn uploadButton">
+                <span class="material-icons">folder</span> Upload Receipt
+            </label>
+            <input type="file" id="uploadInput" accept="image/*, .pdf" onchange="previewFile()">
+            
+            <!-- Error or Loading Messages -->
+            <p id="loadingMessage" class="loading-message">Loading...</p>
+            <p id="errorMessage" class="error-message">Unsupported file format. Please upload a valid image file.</p>
+            <div class="space"></div>
+            
+        </div>
+{% endblock %}
