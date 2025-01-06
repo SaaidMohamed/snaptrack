@@ -1,0 +1,299 @@
+{
+    "ocr_type": "receipts",
+    "request_id": "P_103.125.235.21_m5keqf1o_yom",
+    "ref_no": "ocr_python_123",
+    "file_name": "img123.png",
+    "request_received_on": 1736129592494,
+    "success": true,
+    "image_width": 421,
+    "image_height": 643,
+    "image_rotation": -0.033,
+    "recognition_completed_on": 1736129592895,
+    "receipts": [
+        {
+            "merchant_name": "DRY GOODS",
+            "merchant_address": null,
+            "merchant_phone": null,
+            "merchant_website": null,
+            "merchant_tax_reg_no": null,
+            "merchant_company_reg_no": null,
+            "region": null,
+            "mall": null,
+            "country": "US",
+            "receipt_no": null,
+            "date": null,
+            "time": null,
+            "items": [
+                {
+                    "amount": 4.69,
+                    "category": null,
+                    "description": "038000291562 EGGO LOADED",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 10.99,
+                    "category": null,
+                    "description": "095705135430 160Z PISTACHIO MEATS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.6,
+                    "category": null,
+                    "description": "200208000000 MB BONELESS BREAST",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.69,
+                    "category": null,
+                    "description": "014100098966 PF PUMPKIN SWIRL",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 7.99,
+                    "category": null,
+                    "description": "762111142757 STRBCK PEPPERMIND",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.79,
+                    "category": null,
+                    "description": "015000073657 GER 2ND PR/CIN/OAT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "015000070014 GERBER OATMEAL",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 7.99,
+                    "category": null,
+                    "description": "071022321190 MARIANI DATE",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.79,
+                    "category": null,
+                    "description": "015000076719 GER 2ND BAN ORG 2PK",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "029000016682 PLNTR MXDNUT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.25,
+                    "category": null,
+                    "description": "052200172018 BEECHNUT STAGE 2",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.89,
+                    "category": null,
+                    "description": "889497567148 JUICY JCE TROP PLAS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.39,
+                    "category": null,
+                    "description": "052200034774 BEECH NUT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.95,
+                    "category": null,
+                    "description": "037100033188 LIBBYS CUT GRN BEANS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "099705001108 GROCERY ITEM",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "819573010275 H-TOT BBRY-PEAR-BEET",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.79,
+                    "category": null,
+                    "description": "041800212705 WELCH 100% GRPE & FIBR",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.0,
+                    "category": null,
+                    "description": "898999040004 VITA COCO PEACH",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "819573011722 H-TOT F + P APP PCH CN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.79,
+                    "category": null,
+                    "description": "049705075197 MB BAKING SODA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.25,
+                    "category": null,
+                    "description": "052200172087 B-N-J ST2 BN-BLU-GB",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                }
+            ],
+            "currency": "USD",
+            "total": 10.99,
+            "subtotal": null,
+            "tax": null,
+            "service_charge": null,
+            "tip": null,
+            "payment_method": null,
+            "payment_details": null,
+            "credit_card_type": null,
+            "credit_card_number": null,
+            "ocr_text": "       BRKFST/BAGELS/JUICE\n 038000291562 EGGO LOADED            4.69 F\n       DRY GOODS\n 095705135430 160Z PISTACHIO MEATS 10.99 F\n       FRESH POULTRY\n 200208000000 MB BONELESS BREAST 4.60 F\n               3CP\n                1 @ 4.60\n      GROCERY\n 014100098966 PF PUMPKIN SWIRL       4.69 F\n              BREAD\n 762111142757 STRBCK PEPPERMIND      7.99 F\n              MOCHA\n 015000073657 GER 2ND PR/CIN/OAT     1.79 F\n 015000070014 GERBER OATMEAL         2.99 F\n              CEREAL\n 071022321190 MARIANI DATE           7.99 F\n 015000076719 GER 2ND BAN ORG 2PK 1.79 F\n 029000016682 PLNTR MXDNUT           4.99 F\n 052200172018 BEECHNUT STAGE 2       1.25 F\n              PEAR BLUEBERRY\n 889497567148 JUICY JCE TROP PLAS    3.89 F\n 052200034774 BEECH NUT              2.39 F\n 037100033188 LIBBYS CUT GRN BEANS 5.95 F\n               5 @ 1.19\n 099705001108 GROCERY ITEM\n                                     2.99 F\n 819573010275 H-TOT BBRY-PEAR-BEET 3.00 F\n               2 @ 2/3.00\n 041800212705 WELCH 100% GRPE & FIBR 4.79 F\n 898999040004 VITA COCO PEACH       5.00 F\n               2 @ 2/5.00\n 819573011722 H-TOT F + P APP PCH CN 3.00 F\n               2 @ 2/3.00\n 049705075197 MB BAKING SODA        0.79 F\n 052200172087 B-N-J ST2 BN-BLU-GB   1.25 F",
+            "ocr_confidence": 97.35,
+            "width": 412,
+            "height": 632,
+            "avg_char_width": 9.7582,
+            "avg_line_height": 15.4903,
+            "conf_amount": 79,
+            "source_locations": {
+                "merchant_name": [
+                    [
+                        {
+                            "y": 53,
+                            "x": 57
+                        },
+                        {
+                            "y": 53,
+                            "x": 151
+                        },
+                        {
+                            "y": 67,
+                            "x": 151
+                        },
+                        {
+                            "y": 67,
+                            "x": 57
+                        }
+                    ]
+                ],
+                "doc": [
+                    [
+                        {
+                            "y": -13,
+                            "x": -24
+                        },
+                        {
+                            "y": -28,
+                            "x": 428
+                        },
+                        {
+                            "y": 666,
+                            "x": 451
+                        },
+                        {
+                            "y": 681,
+                            "x": -1
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}

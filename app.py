@@ -9,10 +9,28 @@ from helpers import apology, login_required
 from init_db import db_execute, insert_receipt_and_items_json_to_db
 from valid_email import is_valid_email
 from receipt_ocr import ReceiptOCR
+#from models import db
+#from models.user import User
+#from models.receipt import Receipt
+#from models.receipt_item import ReceiptItem
+
 
 
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
+
+
+# PostgreSQL Configuration
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+# Initialize SQLAlchemy
+#db.init_app(app)
+
+# Create Tables
+#@app.before_first_request
+#def create_tables():
+    #db.create_all()
 
 # Define Pydantic model for validation
 class Item(BaseModel):
