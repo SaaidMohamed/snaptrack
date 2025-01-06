@@ -1,7 +1,7 @@
 import os
 import datetime
 from typing import List
-from flask import Flask, render_template, request, redirect,session, jsonify
+from flask import Flask, render_template, request, redirect,session, jsonify, flash
 from flask_bcrypt import Bcrypt
 from pydantic import BaseModel, ValidationError
 from flask_session import Session
@@ -58,6 +58,7 @@ def after_request(response):
 @login_required
 def index():
     """Main index"""   
+    flash("testing flash!!")
     return render_template('index.html')
 
 @app.route('/save-receipt', methods=['POST'])
