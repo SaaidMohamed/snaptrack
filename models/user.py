@@ -1,5 +1,5 @@
 from . import db
-import datetime
+from datetime import datetime
 
 
 class User(db.Model):
@@ -9,8 +9,8 @@ class User(db.Model):
     user_name = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), unique=True, nullable=False)
     password_hash = db.Column(db.String(255), nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    updated_at = db.Column(db.DateTime, onupdate=datetime.utcnow)
+    created_at = db.Column(db.DateTime, default=datetime.timetzone.utc)
+    updated_at = db.Column(db.DateTime, onupdate=datetime.timetzone.utc)
     is_active = db.Column(db.Boolean, default=True)
     role = db.Column(db.String(50))
 
