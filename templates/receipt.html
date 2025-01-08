@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    home
+{% endblock %}
+
+{% block main %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<body>
+  <div class="receipt-container">
+    <div class="receipts-grid">
+      {% for receipt in receipts %}
+      <div class="receipt-summary" onclick="showDetails({{ receipt.id }})">
+        <p><strong>Merchant:</strong> {{ receipt.merchant }}</p>
+        <p><strong>Date & Time:</strong> {{ receipt.datetime }}</p>
+        <p><strong>Total:</strong> {{ receipt.total }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Details Modal -->
+  <div id="receipt-details" class="receipt-details hidden">
+    <div class="details-content">
+      <button class="close-button" onclick="closeDetails()">Close</button>
+      <h2>Receipt Details</h2>
+      <div id="details-container">
+        <!-- Details dynamically injected here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+{% endblock %}
+
