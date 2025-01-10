@@ -5,25 +5,26 @@ function showDetails(id) {
           throw new Error("Receipt not found");
         }
         return response.json();
+        
       })
       .then((receipt) => {
         const detailsContainer = document.getElementById("details-container");
-  
+
         // Build receipt details content
         let content = `
-          <p><strong>Merchant:</strong> ${receipt.merchant}</p>
-          <p><strong>Address:</strong> ${receipt.address}</p>
-          <p><strong>Date & Time:</strong> ${receipt.datetime}</p>
-          <p><strong>Total:</strong> ${receipt.total}</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Item</th>
-                <th>Qty</th>
-                <th>Price</th>
-              </tr>
-            </thead>
-            <tbody>
+              <p><strong>Merchant:</strong> ${receipt.merchant}</p>
+              <p><strong>Merchant:</strong> ${receipt.address}</p>
+              <p><strong>Date:</strong> ${receipt.datetime}</p>
+              </br>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
         `;
         receipt.items.forEach((item) => {
           content += `
@@ -35,8 +36,16 @@ function showDetails(id) {
           `;
         });
         content += `
-            </tbody>
-          </table>
+            <tfoot>
+                  <tr class="total">
+                    <td colspan="2">Total</td>
+                    <td>${receipt.total}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <button class="close-button" onclick="closeDetails()">Close</button>
         `;
   
         detailsContainer.innerHTML = content;

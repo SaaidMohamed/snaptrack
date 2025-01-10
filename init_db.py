@@ -165,3 +165,81 @@ def insert_receipt_and_items_json_to_db(validated_receipt, user_id):
     finally:
         cursor.close()
         conn.close()
+
+def fetch_receipt_and_items_json_from_db(user_id):
+    """
+    fetch receipt and items json data from the database for a specific user.
+
+    Parameters:
+        user_id (int): The ID of the user.
+
+    Returns:
+        json list
+    """
+
+
+    # Connect to PostgreSQL
+    conn = psycopg2.connect(
+        dbname="TestDB",
+        user="postgres",
+        password="password",
+        host="localhost",
+        port="5432"
+    )
+    cursor = conn.cursor()
+
+    query = """
+    SELECT 
+        r.id AS receipt_id,
+        r.merchant_name,
+        r.merchant_address,
+        r.date ,
+        r.total,
+        i.description AS item_name,
+        i.qty,
+        i.amount
+    FROM 
+        receipts r
+    JOIN 
+        receipt_items i
+    ON 
+        r.id = i.receipt_id
+    WHERE r.user_id = %s
+    ORDER BY r.id;
+    """
+    cursor.execute(query, (user_id,))
+    rows = cursor.fetchall()
+
+    
+
+    # Extract column names
+    column_names = [desc[0] for desc in cursor.description]
+
+    # Close the connection
+    cursor.close()
+    conn.close()
+
+    # Process the data into the desired format
+    data = {}
+    for row in rows:
+        row_data = dict(zip(column_names, row))
+        receipt_id = row_data["receipt_id"]
+        
+        if receipt_id not in data:
+            data[receipt_id] = {
+                "id": receipt_id,
+                "merchant": row_data["merchant_name"],
+                "address": row_data["merchant_address"],
+                "datetime": row_data["date"],
+                "total": f"${row_data['total']:.2f}",
+                "items": []
+            }
+        data[receipt_id]["items"].append({
+            "name": row_data["item_name"],
+            "qty": row_data["qty"],
+            "price": f"${row_data['amount']:.2f}"
+        })
+    print(data)
+    # Convert data to a list
+    return list(data.values())
+

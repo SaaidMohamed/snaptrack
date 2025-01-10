@@ -10,19 +10,23 @@
   <div class="receipt-container">
     <div class="receipts-grid">
       {% for receipt in receipts %}
-      <div class="receipt-summary" onclick="showDetails({{ receipt.id }})">
-        <p><strong>Merchant:</strong> {{ receipt.merchant }}</p>
-        <p><strong>Date & Time:</strong> {{ receipt.datetime }}</p>
-        <p><strong>Total:</strong> {{ receipt.total }}</p>
+      <div class="receipt-summary">
+        <div class="summary-content">
+          <h2>{{ receipt.merchant }}</h2>
+          <p>Date: {{ receipt.datetime }}</p>
+          <p>Total: <strong>{{ receipt.total }}</strong></p>
+          <button onclick="showDetails({{ receipt.id }})">View Details</button>
+        </div>
       </div>
       {% endfor %}
     </div>
   </div>
 
+  
+
   <!-- Details Modal -->
   <div id="receipt-details" class="receipt-details hidden">
     <div class="details-content">
-      <button class="close-button" onclick="closeDetails()">Close</button>
       <h2>Receipt Details</h2>
       <div id="details-container">
         <!-- Details dynamically injected here -->

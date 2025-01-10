@@ -6,7 +6,7 @@ from flask_bcrypt import Bcrypt
 from pydantic import BaseModel, ValidationError
 from flask_session import Session
 from helpers import apology, login_required
-from init_db import db_execute, insert_receipt_and_items_json_to_db
+from init_db import db_execute, insert_receipt_and_items_json_to_db, fetch_receipt_and_items_json_from_db
 from valid_email import is_valid_email
 from receipt_ocr import ReceiptOCR
 #from models import db
@@ -71,52 +71,37 @@ def after_request(response):
     response.headers["Pragma"] = "no-cache"
     return response
 
-# Mock receipt data
-receipts = [
-    {
-        "id": 1,
-        "merchant": "The Great Store",
-        "address": "123 Main Street, City, Country",
-        "datetime": "2025-01-07 14:32",
-        "total": "$39.00",
-        "items": [
-            {"name": "Item A", "qty": 1, "price": "$10.00"},
-            {"name": "Item B", "qty": 2, "price": "$15.00"},
-        ],
-    },
-    {
-        "id": 2,
-        "merchant": "Another Shop",
-        "address": "456 Market Lane, City, Country",
-        "datetime": "2025-01-06 10:15",
-        "total": "$25.50",
-        "items": [
-            {"name": "Item X", "qty": 1, "price": "$12.00"},
-            {"name": "Item Y", "qty": 1, "price": "$13.50"},
-        ],
-    },
-]
 
-
-@app.route("/")
+@app.route('/')
+@login_required
 def index():
-    # Pass receipts data to the frontend
+    """Main index"""   
+    flash("testing flash!!")
+    return render_template('index.html')
+
+@app.route('/fetch_receipts')
+@login_required
+def fetch_receipts():
+    """ docs """
+
+    user_id = session['user_id']
+    receipts = fetch_receipt_and_items_json_from_db(user_id)
+
     return render_template("receipt.html", receipts=receipts)
+
+
 
 @app.route("/api/receipt/<int:receipt_id>")
 def get_receipt(receipt_id):
     # Fetch receipt details by ID
+    user_id = session['user_id']
+    receipts = fetch_receipt_and_items_json_from_db(user_id)
     receipt = next((r for r in receipts if r["id"] == receipt_id), None)
     if receipt:
         return jsonify(receipt)
     return jsonify({"error": "Receipt not found"}), 404
 
-#@app.route('/')
-#@login_required
-#def index():
-   # """Main index"""   
-   # flash("testing flash!!")
-    #return render_template('index.html')
+
 
 @app.route('/save-receipt', methods=['POST'])
 @login_required
@@ -136,7 +121,8 @@ async def save_receipt():
         # Insert data into PostgreSQL
         user_id = session['user_id']
         insert_receipt_and_items_json_to_db(validated_receipt.model_dump(), user_id)
-        return jsonify({"message": "Receipt saved successfully!"}), 200
+        return render_template("receipt.html", receipts=receipts)
+
 
 
 @app.route('/upload', methods=['POST'])
@@ -166,6 +152,8 @@ def upload():
             return render_template('ocrtext.html', data = ocr_api_data)
         else:
             return apology('No image uploaded', 400) 
+
+
 
 
 @app.route("/register", methods=["GET", "POST"])
