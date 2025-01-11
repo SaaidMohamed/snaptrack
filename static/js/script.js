@@ -1,5 +1,11 @@
 function showDetails(id) {
-    fetch(`/api/receipt/${id}`)
+    fetch(`/api/receipt`, {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ id })
+      })
       .then((response) => {
         if (!response.ok) {
           throw new Error("Receipt not found");
@@ -13,7 +19,7 @@ function showDetails(id) {
         // Build receipt details content
         let content = `
               <p><strong>Merchant:</strong> ${receipt.merchant}</p>
-              <p><strong>Merchant:</strong> ${receipt.address}</p>
+              <p><strong>Address:</strong> ${receipt.address}</p>
               <p><strong>Date:</strong> ${receipt.datetime}</p>
               </br>
               <table>

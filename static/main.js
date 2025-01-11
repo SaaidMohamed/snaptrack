@@ -130,7 +130,6 @@ function confirmImage() {
     // Create FormData and send to backend
     const formData = new FormData();
     imgName = fileName.textContent.split('.')[0]+'.png'
-    console.log(imgName)
     formData.append('image', blob,  imgName);
     
     fetch('/upload', {

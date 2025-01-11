@@ -34,11 +34,13 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Define Pydantic model for validation
 class Item(BaseModel):
+    """ docs """
     description: str
     amount: float
     qty: int
 
 class Receipt(BaseModel):
+    """ docs """
     merchant_name: str
     merchant_address: str
     date: str
@@ -91,15 +93,27 @@ def fetch_receipts():
 
 
 
-@app.route("/api/receipt/<int:receipt_id>")
-def get_receipt(receipt_id):
-    # Fetch receipt details by ID
-    user_id = session['user_id']
-    receipts = fetch_receipt_and_items_json_from_db(user_id)
-    receipt = next((r for r in receipts if r["id"] == receipt_id), None)
-    if receipt:
-        return jsonify(receipt)
-    return jsonify({"error": "Receipt not found"}), 404
+@app.route("/api/receipt", methods=['POST'])
+@login_required
+def get_receipt():
+    """ docs """ 
+    if request.method == 'POST':
+        req_data = request.json
+        if not req_data or 'id' not in req_data:
+            return jsonify({'error': 'ID not provided'}), 400
+
+        # Extract the ID
+        receipt_id = req_data['id']
+
+        # Fetch receipt details by ID
+        user_id = session['user_id']
+        receipts = fetch_receipt_and_items_json_from_db(user_id)
+        receipt = next((r for r in receipts if r["id"] == receipt_id), None)
+
+        if receipt:
+            return jsonify(receipt)
+        return jsonify({"error": "Receipt not found"}), 404
+    return jsonify({"error": "page not found"}), 404
 
 
 
@@ -117,10 +131,12 @@ async def save_receipt():
 
         except ValidationError as e:
             return jsonify({"error": e.errors()}), 400
-        
+
         # Insert data into PostgreSQL
         user_id = session['user_id']
         insert_receipt_and_items_json_to_db(validated_receipt.model_dump(), user_id)
+        receipts = fetch_receipt_and_items_json_from_db(user_id)
+
         return render_template("receipt.html", receipts=receipts)
 
 
@@ -231,7 +247,7 @@ def data():
     user_id = session['user_id']
     Data = db_execute("select merchant_name as store, (SELECT SUM(Amount) as total from receipt_items where user_id = %s AND receipt_id = receipts.id)  FROM receipts WHERE user_id = %s", (user_id,user_id))
     result = [{"label": item["store"], "value": item["total"]} for item in Data]
-    return jsonify(result)  
+    return jsonify(result)
 
 
 @app.route('/history', methods=['GET'])
