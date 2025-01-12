@@ -99,7 +99,7 @@ class ReceiptOCR:
         Returns:
             dict: JSON response from the OCR API.
         """
-        receipt_ocr_endpoint ="https://ocr2.asprise.com/api/v1/receipt" #Primary "https://ocr.asprise.com/api/v1/receipt"  # backup : https://ocr2.asprise.com/api/v1/receipt
+        receipt_ocr_endpoint ="https://ocr.asprise.com/api/v1/receipt" #Primary "https://ocr.asprise.com/api/v1/receipt"  # backup : https://ocr2.asprise.com/api/v1/receipt
 
         try:
             # Make the POST request
@@ -112,7 +112,7 @@ class ReceiptOCR:
                         'ref_no': "ocr_python_123",
                     },
                     files={"file": image_file},
-                    timeout=10
+                    timeout=20
                 )
 
             # Check if the request was successful

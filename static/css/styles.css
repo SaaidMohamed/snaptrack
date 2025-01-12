@@ -119,6 +119,12 @@ h1 {
     color: white;
 }
 
+.confirm-btn:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
 .retry-btn {
     padding: 10px 20px;
     border: none;
@@ -466,4 +472,13 @@ h1 {
 /* Hidden Class */
 .hidden {
     display: none;
+}
+
+
+.error_message{
+    color: red;
+}
+
+.success_message{
+    color: #28a745;
 }

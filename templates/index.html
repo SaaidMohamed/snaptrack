@@ -12,12 +12,16 @@
         <div id="filePreviewMcontainer" class="filePreviewMcontainer">
             <h2>Image Preview</h2>
             <div id="filePreviewContainer" class="file-preview-container">
+
                 <img id="previewImage" src="" alt="File Preview">
                 <p id="fileName"></p>
+                <p id="status"></p>
+
                 <div class="filePreviewButtons">
-                    <button class="confirm-btn" onclick="confirmImage()">Process</button>
+                    <button id="confirm-btn" class="confirm-btn" onclick="confirmImage()">Process</button>
                     <button class="retry-btn" onclick="retryUpload()">Retry</button>
                 </div>
+
             </div>
         </div>
 

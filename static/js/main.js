@@ -9,6 +9,7 @@ const loadingMessage = document.getElementById('loadingMessage');
 const ocrFormBtn = document.getElementById('ocrFormBtn');
 
 
+
 async function handleFormSubmission(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
@@ -99,6 +100,15 @@ function previewFile() {
 
 
 function confirmImage() {
+
+    const confirmBtn = document.getElementById('confirm-btn');
+    const statusMessage = document.getElementById('status');
+
+    // Disable the button to prevent multiple clicks
+    confirmBtn.disabled = true;
+    statusMessage.textContent = "Processing...";
+    statusMessage.style.color = '#28a745';
+
     function base64ToBlob(base64, mime) {
         const byteString = atob(base64.split(',')[1]); // Decode Base64
         const arrayBuffer = new Uint8Array(byteString.length);
@@ -121,7 +131,6 @@ function confirmImage() {
     // Create FormData and send to backend
     const formData = new FormData();
     imgName = fileName.textContent.split('.')[0]+'.png'
-    console.log(imgName)
     formData.append('image', blob,  imgName);
     
     fetch('/upload', {
@@ -251,7 +260,6 @@ function showDetails(id) {
               <p><strong>Merchant:</strong> ${receipt.merchant}</p>
               <p><strong>Address:</strong> ${receipt.address}</p>
               <p><strong>Date:</strong> ${receipt.datetime}</p>
-              </br>
               <table>
                 <thead>
                   <tr>

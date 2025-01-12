@@ -1,14 +1,14 @@
 {
     "ocr_type": "receipts",
-    "request_id": "P_185.177.126.134_m5sztw5i_m2d",
+    "request_id": "P_185.177.126.134_m5txa327_6nr",
     "ref_no": "ocr_python_123",
     "file_name": "image.png",
-    "request_received_on": 1736648755974,
+    "request_received_on": 1736704938752,
     "success": true,
     "image_width": 421,
     "image_height": 643,
     "image_rotation": -0.033,
-    "recognition_completed_on": 1736648756264,
+    "recognition_completed_on": 1736704939100,
     "receipts": [
         {
             "merchant_name": "DRY GOODS",

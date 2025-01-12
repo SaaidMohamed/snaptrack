@@ -222,14 +222,18 @@ def login():
         password = request.form.get("password")
 
         if not email:
-            return apology("must provide email", 403)
+            error_message = {"message":"must provide email", "class":"error_message"}
+            return render_template("login.html", error_message = error_message)
+        
         elif not password:
-            return apology("must provide password", 403)
+            error_message = {"message":"must provide password", "class":"error_message"}
+            return render_template("login.html", error_message = error_message)
 
         rows = db_execute("SELECT user_id, password_hash FROM users WHERE email = %s", (email,))
         
         if len(rows) != 1 or not bcrypt.check_password_hash(rows[0]['password_hash'], password):
-            return apology("invalid username and/or password", 403)
+            error_message = {"message":"invalid username and/or password", "class":"error_message"}
+            return render_template("login.html", error_message = error_message)
 
         session["user_id"] = rows[0]["user_id"]
 
