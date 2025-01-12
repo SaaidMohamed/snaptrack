@@ -15,7 +15,7 @@ async function handleFormSubmission(event) {
     // Get the form element
     const form = document.getElementById('ocrForm');
 
-    // Collect other form data
+    // Collect main form data
     const formData = new FormData(form);
     const jsonData = {};
     formData.forEach((value, key) => {
@@ -26,10 +26,7 @@ async function handleFormSubmission(event) {
     const items = [];
     const tableBody = document.getElementById('editable-items-table-body');
     const rows = tableBody.querySelectorAll('tr'); // Get all rows in the table body
-    // Check how many rows are being selected
-    console.log('Number of rows found:', rows.length);
-
-
+ 
     rows.forEach((row) => {
         const cells = row.querySelectorAll('td');
         const item = {
@@ -43,9 +40,6 @@ async function handleFormSubmission(event) {
     // Add items to the JSON object
     jsonData.items = items;
 
-    // Print the JSON data to verify it's correct
-    console.log('JSON Data being sent:', JSON.stringify(jsonData, null, 2));
-
     // Send JSON data to the backend
     try {
         const response = await fetch('/save-receipt', {
@@ -58,9 +52,9 @@ async function handleFormSubmission(event) {
 
         // Handle the response
         if (response.ok) {
-            const result = await response.json();
+            const result = await response.text();
+            document.body.innerHTML = result; 
             alert('Data saved successfully!');
-            console.log(result);
         } else {
             alert('Error saving data!');
             console.log('Error:', response.statusText);
@@ -69,9 +63,6 @@ async function handleFormSubmission(event) {
         console.log('Fetch error:', error);
     }
 }
-
-//ocrFormBtn.addEventListener('submit', handleFormSubmission);
-
 
 
 function previewFile() {
@@ -130,6 +121,7 @@ function confirmImage() {
     // Create FormData and send to backend
     const formData = new FormData();
     imgName = fileName.textContent.split('.')[0]+'.png'
+    console.log(imgName)
     formData.append('image', blob,  imgName);
     
     fetch('/upload', {
@@ -236,19 +228,72 @@ async function fetchData() {
     }
 }
 
+function showDetails(id) {
+    fetch(`/api/receipt`, {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ id })
+      })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Receipt not found");
+        }
+        return response.json();
+        
+      })
+      .then((receipt) => {
+        const detailsContainer = document.getElementById("details-container");
 
-
-//for layout.html
-/*
-document.addEventListener('DOMContentLoaded', function() {
-    // Adapted from https://stackoverflow.com/a/10162353
-    const html = '<!DOCTYPE ' +
-    document.doctype.name +
-    (document.doctype.publicId ? ' PUBLIC "' + document.doctype.publicId + '"' : '') +
-    (!document.doctype.publicId && document.doctype.systemId ? ' SYSTEM' : '') +
-    (document.doctype.systemId ? ' "' + document.doctype.systemId + '"' : '') +
-    '>\n' + document.documentElement.outerHTML;
-    document.querySelector('form[action="https://validator.w3.org/check"] > input[name="fragment"]').value = html;
-});
-
-*/
+        // Build receipt details content
+        let content = `
+              <p><strong>Merchant:</strong> ${receipt.merchant}</p>
+              <p><strong>Address:</strong> ${receipt.address}</p>
+              <p><strong>Date:</strong> ${receipt.datetime}</p>
+              </br>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+        `;
+        receipt.items.forEach((item) => {
+          content += `
+            <tr>
+              <td>${item.name}</td>
+              <td>${item.qty}</td>
+              <td>${item.price}</td>
+            </tr>
+          `;
+        });
+        content += `
+            <tfoot>
+                  <tr class="total">
+                    <td colspan="2">Total</td>
+                    <td>${receipt.total}</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <button class="close-button" onclick="closeDetails()">Close</button>
+        `;
+  
+        detailsContainer.innerHTML = content;
+        document.getElementById("receipt-details").classList.remove("hidden");
+      })
+      .catch((error) => {
+        console.error(error);
+        alert("Error fetching receipt details.");
+      });
+  }
+  
+  function closeDetails() {
+    document.getElementById("receipt-details").classList.add("hidden");
+  }
+  

@@ -162,12 +162,12 @@ def upload():
             fs.save(img_path)
 
             #make a request to ocr api passing image name.
-            ocr = ReceiptOCR() 
+            ocr = ReceiptOCR()
             ocr_api_data = ocr.ocr_api(img_path,json_path)
 
             return render_template('ocrtext.html', data = ocr_api_data)
         else:
-            return apology('No image uploaded', 400) 
+            return apology('No image uploaded', 400)
 
 
 
@@ -245,14 +245,14 @@ def data():
     '''Populate graph'''
     # Fetch data from the database
     user_id = session['user_id']
-    Data = db_execute("select merchant_name as store, (SELECT SUM(Amount) as total from receipt_items where user_id = %s AND receipt_id = receipts.id)  FROM receipts WHERE user_id = %s", (user_id,user_id))
-    result = [{"label": item["store"], "value": item["total"]} for item in Data]
+    db_data = db_execute("select merchant_name as store, total FROM receipts WHERE user_id =%s", (user_id,))
+    result = [{"label": item["store"], "value": item["total"]} for item in db_data]
     return jsonify(result)
 
 
-@app.route('/history', methods=['GET'])
+@app.route('/Insights', methods=['GET'])
 @login_required
-def history():
+def Insights():
     '''Populate graph'''
     return render_template("data.html")
 

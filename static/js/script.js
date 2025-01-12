@@ -1,3 +1,4 @@
+/*
 function showDetails(id) {
     fetch(`/api/receipt`, {
       method: 'POST',
@@ -66,4 +67,4 @@ function showDetails(id) {
   function closeDetails() {
     document.getElementById("receipt-details").classList.add("hidden");
   }
-  
+  */
