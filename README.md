@@ -1,16 +1,26 @@
 
-# Receipt Manager App
+# [snaptrack][pypi-url]
 
-Receipt Manager App is a simple Flask application for managing and analyzing receipts. Users can submit receipt data, view summarized graphs, and access user-friendly pages for success and errors. The app integrates a PostgreSQL database for secure data storage and retrieval.
+[pypi-url]: https://github.com/SaaidMohamed/snaptrack/blob/main/README.md
+
+Snaptrack is a receipt manager App, a simple Flask application for managing and analyzing receipts. 
+Users can take a picture or upload a picture of a receipt, convert receipt image to a digital receipt,
+submit receipt data, view summarized graphs, and access user-friendly pages. The app integrates a PostgreSQL database
+for secure data storage and retrieval.
 
 ---
 
+Video Demo: <https://youtu.be/Tz3JNFO_JwI>
+
+
 ## Features
 
-- Submit and store receipt details with a unique ID for each entry.
+- Convert receipt image to a digital receipt.
+- Submit and store receipt details.
 - Visualize receipt data through graphs (totals or summaries).
 - User-friendly success/error feedback pages.
-- Disable duplicate submissions during uploads for data consistency.
+- Store images with their json data.
+- prevent duplicate submissions during uploads for data consistency.
 - Modern frontend design with responsive layouts.
 
 ---
@@ -36,7 +46,7 @@ Receipt Manager App is a simple Flask application for managing and analyzing rec
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/receipt-manager.git
+   git clone https://github.com/SaaidMohamed/snaptrack.git
    cd receipt-manager
    ```
 
@@ -53,7 +63,7 @@ Receipt Manager App is a simple Flask application for managing and analyzing rec
 
 4. Set up your PostgreSQL database and configure it:
    ```sql
-   CREATE DATABASE receipt_manager;
+   CREATE DATABASE snaptrack;
    ```
    Update `app.py` or `.env` with your database credentials.
 
@@ -85,12 +95,17 @@ Receipt Manager App is a simple Flask application for managing and analyzing rec
 ```
 receipt-manager/
 ├── app.py             # Main Flask application
+├── helpers.py         # Python helper functions
+├── init_db.py         # Python db init and functions
+├── receipt_ocr.py     # Python OCR API 
+├── valid_email.py     # Python email validation
 ├── requirements.txt   # Python dependencies
 ├── static/            # Static assets
 │   ├── css/           # Stylesheets
 │   └── js/            # JavaScript files
 ├── templates/         # HTML templates
-│   ├── base.html      # Base template
+│   ├── layouts.html   # Base template
+|   ├── index.html     # home template
 │   └── error.html     # 404 error page
 └── README.md          # Project documentation
 ```
