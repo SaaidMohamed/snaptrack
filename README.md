@@ -3,23 +3,17 @@
 
 [pypi-url]: https://github.com/SaaidMohamed/snaptrack/blob/main/README.md
 
-Snaptrack is a receipt manager App, a simple Flask application for managing and analyzing receipts. 
-Users can take a picture or upload a picture of a receipt, convert receipt image to a digital receipt,
-submit receipt data, view summarized graphs, and access user-friendly pages. The app integrates a PostgreSQL database
-for secure data storage and retrieval.
+Snaptrack is a receipt manager App, a simple Flask application for managing and analyzing receipts. Users can take a picture or upload a picture of a receipt, convert receipt image to a digital receipt, submit receipt data, view summarized graphs. The app integrates a PostgreSQL database for secure data storage and retrieval.
 
 ---
-
-Video Demo: <https://youtu.be/Tz3JNFO_JwI>
-
 
 ## Features
 
 - Convert receipt image to a digital receipt.
-- Submit and store receipt details.
+- Edit degital receipt data before saving it. 
+- Submit and store degital receipt with all details.
 - Visualize receipt data through graphs (totals or summaries).
-- User-friendly success/error feedback pages.
-- Store images with their json data.
+- Store receipt images with their json data.
 - prevent duplicate submissions during uploads for data consistency.
 - Modern frontend design with responsive layouts.
 
