@@ -87,7 +87,7 @@ Snaptrack is a simple Flask receipt manager application for managing and analyzi
 ## File Structure
 
 ```
-receipt-manager/
+snaptrack/
 ├── app.py             # Main Flask application
 ├── helpers.py         # Python helper functions
 ├── init_db.py         # Python db init and functions
