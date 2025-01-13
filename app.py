@@ -15,7 +15,6 @@ from receipt_ocr import ReceiptOCR
 #from models.receipt_item import ReceiptItem
 
 
-
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
 
@@ -78,7 +77,7 @@ def after_request(response):
 @login_required
 def index():
     """Main index"""   
-    flash("testing flash!!")
+    
     return render_template('index.html')
 
 @app.route('/fetch_receipts')
@@ -181,28 +180,38 @@ def register():
 
     if method == "POST":
 
-        data = request.form
-        username = data.get("username").strip().lower()
-        email = data.get("email").strip().lower()
-        password = data.get("password")
-        password_confirmation = data.get('confirmPassword')
+        form_data = request.form
+        username = form_data.get("username").strip().lower()
+        email = form_data.get("email").strip().lower()
+        password = form_data.get("password")
+        password_confirmation = form_data.get('confirmPassword')
         valid_email = is_valid_email(email)
         user_id = db_execute("SELECT user_id FROM users WHERE email = %s", (email,) )
 
-
         if not email or not password or not username :
-            return apology("all entries are required", 400)
+            error_message = {"message":"all entries are required", "class":"error_message"}
+            return render_template("/register.html", error_message = error_message)
+        
         if not valid_email:
-            return apology("must provide valid email", 400)
+            error_message = {"message":"must provide valid email", "class":"error_message"}
+            return render_template("/register.html", error_message = error_message)
+                
         if password != password_confirmation:
-            return apology("password mismatch.", 400)
+            error_message = {"message":"password mismatch.", "class":"error_message"}
+            return render_template("/register.html", error_message = error_message)
+        
         if user_id :
-            return apology("Account already exists.", 400)
-
+            error_message = {"message":"Account already exists.", "class":"error_message"}
+            return render_template("/register.html", error_message = error_message)
+        
         hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
         current_timestamp = datetime.datetime.now()
-        query = "INSERT INTO Users (user_name, email, password_hash, created_at, updated_at, is_active, role) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+        query = """INSERT INTO Users (user_name, email, password_hash, created_at,
+        updated_at, is_active, role) VALUES (%s, %s, %s, %s, %s, %s, %s)"""
+
         db_execute(query, (username, email, hashed_password,current_timestamp,current_timestamp,True,'admin'))
+        rows = db_execute("SELECT user_id, password_hash FROM users WHERE email = %s", (email,))
+        session["user_id"] = rows[0]["user_id"]
 
         return render_template('index.html' )
     
@@ -254,9 +263,9 @@ def data():
     return jsonify(result)
 
 
-@app.route('/Insights', methods=['GET'])
+@app.route('/insights', methods=['GET'])
 @login_required
-def Insights():
+def insights():
     '''Populate graph'''
     return render_template("data.html")
 

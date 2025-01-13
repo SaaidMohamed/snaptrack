@@ -55,7 +55,6 @@ async function handleFormSubmission(event) {
         if (response.ok) {
             const result = await response.text();
             document.body.innerHTML = result; 
-            alert('Data saved successfully!');
         } else {
             alert('Error saving data!');
             console.log('Error:', response.statusText);
@@ -190,7 +189,7 @@ function openCamera() {
                 };
             })
             .catch(function (err) {
-                console.log("Error accessing camera: " + err);
+              alert("Error accessing camera: " + err);
             });
     } else {
         alert("Camera not supported on your device.");
@@ -207,7 +206,7 @@ function createGraph(data) {
         data: {
             labels: labels,
             datasets: [{
-                label: 'Analysis Data',
+                label: 'Receipts Total',
                 data: values,
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',

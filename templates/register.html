@@ -16,6 +16,9 @@
     <div class="registerFormContainer">
         <div class="register-form">
             <h2 class="login-formh2">Create an Account</h2>
+            {% if error_message %}
+                <p id="error_message" class="{{error_message.class}}">{{error_message.message}}</p>
+            {% endif %}
             <form id="registerForm" action="/register" method="post">
                 <div class="form-group">
                     <label class="loginFormlabel" for="username">Username</label>
