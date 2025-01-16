@@ -159,16 +159,32 @@ function openCamera() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({ video: true })
             .then(function(stream) {
+                const mainContainer = document.getElementById('mainContainer');
+                uploadMcontainer.style.display = "none";
+                
                 const video = document.createElement('video');
                 video.srcObject = stream;
                 video.play();
                 video.style.width = '100%';
-                document.body.appendChild(video);
+                mainContainer.append(video);
 
                 const captureButton = document.createElement('button');
                 captureButton.textContent = 'Capture Image';
                 captureButton.className = 'pictureBtn';
-                document.body.appendChild(captureButton);
+                mainContainer.append(captureButton);
+
+                const cancelButton = document.createElement('button');
+                cancelButton.textContent = 'Cancel';
+                cancelButton.className = 'cancel-button';
+                mainContainer.append(cancelButton);
+
+                cancelButton.onclick = function () {
+                    stream.getTracks().forEach(track => track.stop()); // Stop the camera stream
+                    video.remove();
+                    captureButton.remove();
+                    window.location.href = '/';
+
+                };
 
                 captureButton.onclick = function () {
 
@@ -186,6 +202,7 @@ function openCamera() {
                     stream.getTracks().forEach(track => track.stop()); // Stop the camera stream
                     video.remove();
                     captureButton.remove();
+                    cancelButton.remove();
                 };
             })
             .catch(function (err) {
