@@ -72,7 +72,11 @@ Snaptrack is a simple Flask receipt manager application for managing and analyzi
 
 ## Usage
 
-### Submitting Receipts
+### Upload Receipts
+- Navigate to `/` and click on 'take a picture' to take a picture of the receipt, review receipt picture and submit.
+- If camera option is not supported on your device, click on 'upload receipt' to upload a picture of the receipt, review receipt picture and submit.
+
+### Editting Receipts
 - Navigate to `/add-receipt` and fill out the form to submit a receipt.
 - The app will return a unique receipt ID.
 
