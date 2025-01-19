@@ -1,0 +1,492 @@
+{
+    "ocr_type": "receipts",
+    "request_id": "P_95.173.217.71_m62s14bz_go0",
+    "ref_no": "ocr_python_123",
+    "file_name": "20250118_174249.png",
+    "request_received_on": 1737240317999,
+    "success": true,
+    "image_width": 733,
+    "image_height": 4032,
+    "image_rotation": 0.007,
+    "recognition_completed_on": 1737240319336,
+    "receipts": [
+        {
+            "merchant_name": "MARKET BASKET",
+            "merchant_address": "69 Central Street",
+            "merchant_phone": "+1 603-890-0059",
+            "merchant_website": null,
+            "merchant_tax_reg_no": null,
+            "merchant_company_reg_no": null,
+            "region": null,
+            "mall": null,
+            "country": "US",
+            "state": "NH",
+            "city": "Salem",
+            "zip": "03079",
+            "receipt_no": null,
+            "date": "2025-01-18",
+            "time": null,
+            "items": [
+                {
+                    "amount": 3.0,
+                    "category": null,
+                    "description": "021000644254 KRAFT ZESTY ITALIAN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.49,
+                    "category": null,
+                    "description": "052100006383 MC CHIPTLE CHILI PEP",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "072180634290 RB FOUR CHEESE PIZZA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.99,
+                    "category": null,
+                    "description": "629307040146 3LB YELLOW CHARMERS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.87,
+                    "category": null,
+                    "description": "208829000000 STEM CLUSTER TOMATO",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.91,
+                    "category": null,
+                    "description": "4011BANANAS CHIQUITA",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.8,
+                    "category": null,
+                    "description": "4048LIMES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.5,
+                    "category": null,
+                    "description": "4225HASS AVOCADOS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.04,
+                    "category": null,
+                    "description": "4816YAMS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.52,
+                    "category": null,
+                    "description": "4608GARLIC",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.9,
+                    "category": null,
+                    "description": "4073RED POTATOES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.0,
+                    "category": null,
+                    "description": "761635202602 BLACKBERRIES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.11,
+                    "category": null,
+                    "description": "3121ORANGE PEPPERS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.79,
+                    "category": null,
+                    "description": "4593CUCUMBERS EUROPEAN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.76,
+                    "category": null,
+                    "description": "4082RED ONIONS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.99,
+                    "category": null,
+                    "description": "852575008437 #1 MEX CLMSH SBERRY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "091636000021 3LB PEELZ CAL",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.74,
+                    "category": null,
+                    "description": "4065GREEN PEPPERS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 0.84,
+                    "category": null,
+                    "description": "4550BRUSSELS SPROUTS",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 6.04,
+                    "category": null,
+                    "description": "3496RED SEEDLESS GRAPES",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.49,
+                    "category": null,
+                    "description": "039978039576 BRM ORG STEEL CUT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.99,
+                    "category": null,
+                    "description": "024182002515 EDEN ORG GARBANZO BN",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 5.89,
+                    "category": null,
+                    "description": "202871000000 CAB EXTRA LEAN STEW",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.99,
+                    "category": null,
+                    "description": "049705158975 MB COATED PLATE 9\"",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 2.0,
+                    "category": null,
+                    "description": "049705159712 MB MB HEAVY DUTY",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.29,
+                    "category": null,
+                    "description": "049705160114 MB FACIAL TISSUE",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.69,
+                    "category": null,
+                    "description": "010900278928 REYNOLDS RECYCLED 75",
+                    "flags": "",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 4.0,
+                    "category": null,
+                    "description": "014500021342 BE ASPARAGUS CRM CRT",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 1.79,
+                    "category": null,
+                    "description": "049705693407 MB SWEET PEAS POLY",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                },
+                {
+                    "amount": 3.38,
+                    "category": null,
+                    "description": "042187002354 BEST YET VEG",
+                    "flags": " F",
+                    "qty": null,
+                    "remarks": null,
+                    "tags": null,
+                    "unitPrice": null
+                }
+            ],
+            "currency": "USD",
+            "total": 234.12,
+            "subtotal": 265.52,
+            "tax": 0.4,
+            "service_charge": null,
+            "tip": null,
+            "payment_method": null,
+            "payment_details": null,
+            "credit_card_type": null,
+            "credit_card_number": null,
+            "ocr_text": "       MARKET BASKET\n              \"MOME FOR YOUR DOLLAR\n               69 Central Street\n                 Salem, NH 03079\n                  (603) 890-0059\n          Store Director: Brian Casassa\n                  Store: 084\n   Cashier:                  0840178-Genesis R\n   1/18/25                           10:34 AM\n                      Sale\n         BRKFST/BAGELS/JUICE\n   679844104658 DW CHOCOLATE CHIP     3.69 F\n                PANCAKE 18PK\n         DRY GOODS\n   041409002479 BANANA BREAD MIX      2.79 F\n         EGGS\n   815652004180 NELLIE'S FREE RANGE 4.99 F\n         FRUIT/COOL WHIP\n   079900001691 WYMAN BLUEBERRY 3LB 10.49 F\n         GROCERY\n   071018010176 TEDDIE UNSLTD CREAMY 3.50 F\n   049705081808 MB CREAMY ALMND BTTR 5.99 F\n   049705143810 MB L/S DRY ROASTED    2.50 F\n                PEANUTS\n   819573011739 H-TOT F P PR BLU SPN 3.00 F\n                 2 @ 2/3.00\n   852697001279 HPY S4 BEAN PEA       1.50 F\n   819573015928 HAPPY BABY SPR MRN    3,00 F\n                APL/ACIA\n                 2 @ 2/3.00\n   319573013214 HPY CC2 APL-PMPK-CAR  1.50 F\n   052200172315 BEACHNUT              1.00 F\n   024000524458 DELM DICED MANGO LS   3.00 F\n   010300536642 EMRLD DELUXE MIXED    3.79 F\n   015000046088 GERBER                5.99 F\n   884912359162 POST                 11.97 F\n                 3 @ 3.99\n   889497295058 JUICE JUICE ORANGE    3.89 F\n                TANGERINE\n  049705019184 MB STUFFED MANZANILA 2.79 F\n  029000059573 PLNTR NUT-RTN HEALTH 5.49 F\n  023923334984 EARTH BEST POT/CAR     3.69 F\n                SNACK BAR\n  021000644254 KRAFT ZESTY ITALIAN    3.00 F\n  041800212705 WELCH 100% GRPE & FIBR 4.79 F\n  015000073657 GER 2ND PR/CIN/OAT     5.37 F\n                 3 @ 1.79\n  052100006383 MC CHIPTLE CHILI PEP 3.49 F\n  049705343043 MB DISTILLED           3.96 F\n                 4 @ 0.99\n  041129840535 PRINCE ROTINI TRICLR 2.50 F\n                 2 @ 4/5.00\n  075140245147 CRYSTAL GEYSER 24PK    3.34 F\n  048121184070 100% WHEAT MUFFIN      5.00 F\n                 2 @ 2/5,00\n  072250017671 NATURE LFE WG SF BRD 3.99 F\n  072427000123 FANTINI SPLIT TOP      6.00 F\n                ROLLS\n                 2 @ 2/6.00\n  033844000042 BADIA GARLIC SALT      1.69 F\n  027000852507 HUNT NO SALT SAUCE     1.25 F\n  016000264601 NAT VALLEY OATS HNY    3.50 F\n  052200172186 B-N-J ST2 CRT-CR-PMP   1.00 F\n  052200172322 BEACHNUT               1.00 F\n  014800001730 MOTTS SNCK & GO CINN4P 2.99 F\n  041331124461 GOYA CANNELINI         1.59 F\n  852697001323 HPY S4 BAN MNGO        1.50 F\n        HABA\n  035000982407 SOFT SOAP COCONUT      2.50\n                HIBISCUS\n  074182445737 SOFT SOAP WHITE TEA 2.50\n                BERRY\n        MARKETS KITCHEN\n  206174000000 BBQ CHIX               4.69 T\n        MILK\n  079403114867 RH ORIGINAL ORGANIC 8.97 F\n                 3 @ 2.99\n  044100190766 PLANET OAT COFFEE      4.19 F\n                CAKE CREAMER\n        NATURAL SNACKS\n  049705408681 WHOLE RAW CASHEWS      5.49 F\n        ORGANIC FRUIT\n  051929600390 ORG ZUCCHINI WRAPPED 4.98 F\n                 2 @ 2.49\n  074326000143 AZUMAYA SILK TOFU       3.58 F\n                 2 @ 1.79\n  074326000136 AZUMAYA EXTRA FIRM 3.58 F\n                TOFU\n                 2 @ 1.79\n        PIZZA\n  072180634290 RB FOUR CHEESE PIZZA 4.99 F\n        PRODUCE DEPT\n  4011          BANANAS CHIQUITA       1.23 F\n                 2.500 lb @ $0.49/lb\n  629307040146 3LB YELLOW CHARMERS     5.99 F\n  208829000000 STEM CLUSTER TOMATO     2.87 F\n                MEXICO\n                 1 @ 2.87\n 4011           BANANAS CHIQUITA       2.91 F\n                 5.930 lb @$0.49/lb\n 4048           LIMES                  0.80 F\n                 2 @ 3/1.19\n 4225           HASS AVOCADOS          1.50 F\n 4816           YAMS                   1.04 F\n                 1.050 lb @$0.99/lb\n 4608           GARLIC                 0.52 F\n                 0.150 lb @$3.49/lb\n 4073           RED POTATOES           1.90 F\n                 1.470 lb @$1.29/lb\n 761635202602 BLACKBERRIES             4.00 F\n                 2 @ 2/4.00\n 3121           ORANGE PEPPERS         2.11 F\n                 0.530 lb @$3.99/lb\n 4593          CUCUMBERS EUROPEAN       1.79 F\n 4082           RED ONIONS             0.76 F\n                 0.590 lb @ $1.29/lb\n 852575008437 #1 MEX CLMSH SBERRY       3.99 F\n 091636000021 3LB PEELZ CAL            4.99 F\n               CLEMENTINES\n 4065           GREEN PEPPERS           0.74 F\n                 0.440 lb @$1.69/lb\n 4550           BRUSSELS SPROUTS        0.84 F\n                 0.420 lb @$1.99/lb\n 3496          RED SEEDLESS GRAPES 6.04 F\n                 1.730 lb @ $3.49/lb\n       SPECIALTY FOODS\n 039978039576 BRM ORG STEEL CUT         4.49 F\n               OATS\n 024182002515 EDEN ORG GARBANZO BN 2.99 F\n       STORE CUT BEEF\n 202871000000 CAB EXTRA LEAN STEW 5.89 F\n                1 @ 5.89\n       TAX GROCERY\n 049705158975 MB COATED PLATE 9\"        4.99\n 049705159712 MB MB HEAVY DUTY          2.00\n               SPOON\n 049705160114 MB FACIAL TISSUE          1.29\n 010900278928 REYNOLDS RECYCLED 75 4.69\n       VEGETABLES\n 014500021342 BE ASPARAGUS CRM CRT 4.00 F\n               STEAM\n                2 @ 2/4.00\n 049705693407 MB SWEET PEAS POLY 1.79 F\n 042187002354 BEST YET VEG              3.38 F\n                2 @ 1.69\n         SUBTOTAL                        265.52\n         NH 8.5% Prepared Food Tax         0.40\n         TOTAL                           265.92\n         WIC EBT ELIGIBLE                 31.80\n         E-WIC                            31.80\n         Debit                           234.12\n        TOTAL TENDERED                   265.92\n        Change                              0.00",
+            "ocr_confidence": 97.82,
+            "width": 593,
+            "height": 3993,
+            "avg_char_width": 13.133,
+            "avg_line_height": 21.791,
+            "conf_amount": 74,
+            "source_locations": {
+                "date": [
+                    [
+                        {
+                            "y": 238,
+                            "x": 92
+                        },
+                        {
+                            "y": 234,
+                            "x": 180
+                        },
+                        {
+                            "y": 255,
+                            "x": 181
+                        },
+                        {
+                            "y": 258,
+                            "x": 93
+                        }
+                    ]
+                ],
+                "total": [
+                    [
+                        {
+                            "y": 3875,
+                            "x": 535
+                        },
+                        {
+                            "y": 3875,
+                            "x": 624
+                        },
+                        {
+                            "y": 3900,
+                            "x": 624
+                        },
+                        {
+                            "y": 3900,
+                            "x": 535
+                        }
+                    ]
+                ],
+                "subtotal": [
+                    [
+                        {
+                            "y": 3729,
+                            "x": 534
+                        },
+                        {
+                            "y": 3730,
+                            "x": 625
+                        },
+                        {
+                            "y": 3752,
+                            "x": 625
+                        },
+                        {
+                            "y": 3751,
+                            "x": 534
+                        }
+                    ]
+                ],
+                "merchant_name": [
+                    [
+                        {
+                            "y": 3,
+                            "x": 115
+                        },
+                        {
+                            "y": 7,
+                            "x": 590
+                        },
+                        {
+                            "y": 55,
+                            "x": 590
+                        },
+                        {
+                            "y": 51,
+                            "x": 115
+                        }
+                    ]
+                ],
+                "doc": [
+                    [
+                        {
+                            "y": -197,
+                            "x": 27
+                        },
+                        {
+                            "y": -192,
+                            "x": 680
+                        },
+                        {
+                            "y": 4200,
+                            "x": 651
+                        },
+                        {
+                            "y": 4195,
+                            "x": -1
+                        }
+                    ]
+                ],
+                "tax": [
+                    [
+                        {
+                            "y": 3758,
+                            "x": 562
+                        },
+                        {
+                            "y": 3758,
+                            "x": 624
+                        },
+                        {
+                            "y": 3782,
+                            "x": 624
+                        },
+                        {
+                            "y": 3782,
+                            "x": 562
+                        }
+                    ]
+                ],
+                "merchant_address": [
+                    [
+                        {
+                            "y": 83,
+                            "x": 235
+                        },
+                        {
+                            "y": 83,
+                            "x": 450
+                        },
+                        {
+                            "y": 103,
+                            "x": 450
+                        },
+                        {
+                            "y": 103,
+                            "x": 235
+                        }
+                    ]
+                ]
+            }
+        }
+    ]
+}

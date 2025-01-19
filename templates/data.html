@@ -6,14 +6,57 @@
 
 {% block main %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    /* Basic responsive layout */
+    .dashboard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+    .card {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: #fff;
+    }
+    /* Media query for larger screens */
+    @media (min-width: 768px) {
+        .dashboard {
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Larger minimum width */
+        }
+    }
+</style>
 
 <body onload="fetchData()">
-    
+    <div class="dashboard">
+        <div class="card" id="chart1-container">
+            <canvas id="yearChart" width="400" height="200"></canvas>
+        </div>
+        <div class="card" id="chart2-container">
+            <canvas id="monthChart" width="400" height="200"></canvas>
+        </div>
+        <div class="card" id="chart2-container">
+            <canvas id="weekChart" width="400" height="200"></canvas>
+        </div>
+        <div class="card" id="chart2-container">
+            <canvas id="TsiChart" width="400" height="200"></canvas>
+        </div>
+        <div class="card" id="chart2-container">
+            <canvas id="DsbmChart" width="400" height="200"></canvas>
+        </div>
+        <div class="card" id="chart2-container">
+            <canvas id="PnmsChart" width="400" height="200"></canvas>
+        </div>
+        <!-- More cards as needed -->
+    </div>
 
+
+<!--    Old
 <div  class="LogInContainer">
 
     <canvas id="myChart" width="400" height="200"></canvas>
 
-</div>
+</div>-->
+
 </body>
 {% endblock %}

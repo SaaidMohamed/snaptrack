@@ -258,9 +258,82 @@ def data():
     '''Populate graph'''
     # Fetch data from the database
     user_id = session['user_id']
-    db_data = db_execute("select merchant_name as store, total FROM receipts WHERE user_id =%s", (user_id,))
-    result = [{"label": item["store"], "value": item["total"]} for item in db_data]
-    return jsonify(result)
+
+    db_data_ys = db_execute("""SELECT 
+                                DATE_PART('year', date) AS year,
+                                SUM(total) AS total
+                        FROM receipts
+                        WHERE user_id = %s
+                        GROUP BY DATE_PART('year', date)
+                        ORDER BY year
+                        LIMIT 5;""", (user_id,))
+    year_spending = [{"label": item["year"], "value": item["total"]} for item in db_data_ys]
+
+    db_data_ms = db_execute("""SELECT
+                                TO_CHAR(DATE_TRUNC('month', date), 'Month YYYY') AS month, 
+                                SUM(total) AS total
+                            FROM receipts
+                            WHERE user_id = %s
+                            GROUP BY month
+                            ORDER BY month
+                            LIMIT 12; """, (user_id,))
+    month_spending = [{"label": item["month"], "value": item["total"]} for item in db_data_ms]
+
+    db_data_ws = db_execute(""" SELECT
+                                TO_CHAR(DATE_TRUNC('week', date), 'YYYY-MM-DD') AS week, 
+                                SUM(total) AS total
+                            FROM receipts
+                            WHERE user_id = %s
+                            GROUP BY week
+                            ORDER BY week 
+                            LIMIT 12; """, (user_id,))
+    week_spending = [{"label": item["week"], "value": item["total"]} for item in db_data_ws]
+
+    db_data_tsi = db_execute("""SELECT
+                                description, 
+                                SUM(qty) AS total
+                            FROM receipt_items
+                            WHERE user_id = %s
+                            GROUP BY description
+                            ORDER BY total DESC
+                            LIMIT 10;""", (user_id,))
+    top_selling_items = [{"label": item["description"], "value": item["total"]} for item in db_data_tsi]
+
+    db_data_dsbm = db_execute(""" SELECT 
+                                    TO_CHAR(DATE_TRUNC('month', date), 'Month YYYY') AS month,
+                                    SUM(total) / DATE_PART('days', DATE_TRUNC('month', date) + INTERVAL '1 month' - INTERVAL '1 day') AS daily_average
+                                FROM receipts
+                                WHERE  user_id = %s
+                                GROUP BY DATE_TRUNC('month', date)
+                                ORDER BY DATE_TRUNC('month', date)
+                                LIMIT 12;""", (user_id,))
+    daily_spending_by_month = [{"label": item["month"], "value": item["daily_average"]} for item in db_data_dsbm]
+
+    db_data_pnms = db_execute("""WITH user_monthly AS (
+                                    SELECT 
+                                        DATE_TRUNC('month', date) AS month,
+                                        SUM(total) AS total_spending
+                                    FROM receipts
+                                    WHERE user_id = %s 
+                                    GROUP BY  month
+                                    ORDER BY month
+                                )
+                                SELECT TO_CHAR((DATE_TRUNC('month', CURRENT_DATE) + INTERVAL '1 month')::date, 'Month YYYY') AS next_month_start,
+                                    AVG(total_spending) AS predicted_next_month_spending
+                                FROM user_monthly
+                                WHERE month >= NOW() - INTERVAL '6 months' """, (user_id,))
+    predicted_next_month_spending = [{"label": item["next_month_start"], "value": item["predicted_next_month_spending"]} for item in db_data_pnms]
+
+    # Combine results into a single response
+    graphs_data = {
+        "year_spending": year_spending,
+        "month_spending": month_spending,
+        "week_spending":week_spending,
+        "top_selling_items":top_selling_items,
+        "daily_spending_by_month":daily_spending_by_month,
+        "predicted_next_month_spending":predicted_next_month_spending
+    }
+    return jsonify(graphs_data)
 
 
 @app.route('/insights', methods=['GET'])

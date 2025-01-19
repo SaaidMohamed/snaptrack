@@ -213,25 +213,26 @@ function openCamera() {
     }
 }
 
-function createGraph(data) {
-    const ctx = document.getElementById('myChart').getContext('2d');
+function createGraph(type, title, containerId, backgroundColor, borderColor, data) {
+    const ctx = document.getElementById(containerId).getContext('2d');
     const labels = data.map(item => item.label); // X-axis labels
     const values = data.map(item => item.value); // Y-axis values
 
     new Chart(ctx, {
-        type: 'bar', // Graph type: bar, line, etc.
+        type: type, // Graph type: bar, line, etc.
         data: {
             labels: labels,
             datasets: [{
-                label: 'Receipts Total',
+                label: title,
                 data: values,
-                backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                borderColor: 'rgba(75, 192, 192, 1)',
+                backgroundColor: backgroundColor,
+                borderColor: borderColor,
                 borderWidth: 1,
             }],
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             plugins: {
                 legend: {
                     display: true,
@@ -246,8 +247,15 @@ async function fetchData() {
     try {
         const response = await fetch('/data'); // Endpoint to fetch data
         if (!response.ok) throw new Error('Failed to fetch data');
+
         const data = await response.json();
-        createGraph(data); // Pass data to graphing function
+        createGraph('bar', "Total Spending by Year", "yearChart", "rgba(75, 192, 192, 1)", "rgba(75, 192, 192, 1)", data.year_spending);
+        createGraph('bar', "Total Spending by Month", "monthChart", "rgba(54, 162, 235, 1)", "rgba(54, 162, 235, 1)", data.month_spending);
+        createGraph('bar', "Total Spending by Week", "weekChart", 'rgba(255, 159, 64, 1)', 'rgba(255, 159, 64, 1)', data.week_spending);
+        createGraph('bar', "Top Selling Items", "TsiChart", 'rgba(153, 102, 255, 1)', 'rgba(153, 102, 255, 1)', data.top_selling_items);
+        createGraph('bar', "Daily Average Spending by Month", "DsbmChart", 'rgba(255, 99, 132, 1)', 'rgba(255, 99, 132, 1)', data.daily_spending_by_month);
+        createGraph('bar', "Estimated spending for the upcoming month", "PnmsChart", 'rgba(255, 206, 86, 1)', 'rgba(255, 206, 86, 1)', data.predicted_next_month_spending);
+        
     } catch (error) {
         console.log('Error fetching data:', error);
     }
