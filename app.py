@@ -1,7 +1,7 @@
 import os
 import datetime
 from typing import List
-from flask import Flask, render_template, request, redirect,session, jsonify, flash
+from flask import Flask, render_template, request, redirect,session, jsonify
 from flask_bcrypt import Bcrypt
 from pydantic import BaseModel, ValidationError
 from flask_session import Session

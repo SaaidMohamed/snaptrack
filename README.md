@@ -12,7 +12,7 @@ Snaptrack is a simple Flask receipt manager application for managing and analyzi
 - Convert receipt image to a digital receipt.
 - Edit degital receipt data before saving it. 
 - Submit and store degital receipt with all details.
-- Visualize receipt data through graphs (totals or summaries).
+- Visualize receipt data through graphs (totals, averages and predections).
 - Store receipt images with their json data.
 - prevent duplicate submissions during uploads for data consistency.
 - Modern frontend design with responsive layouts.
@@ -41,7 +41,7 @@ Snaptrack is a simple Flask receipt manager application for managing and analyzi
 1. Clone the repository:
    ```bash
    git clone https://github.com/SaaidMohamed/snaptrack.git
-   cd receipt-manager
+   cd snaptrack
    ```
 
 2. Create a virtual environment and activate it:
@@ -73,15 +73,19 @@ Snaptrack is a simple Flask receipt manager application for managing and analyzi
 ## Usage
 
 ### Upload Receipts
-- Navigate to `/` and click on 'take a picture' to take a picture of the receipt, review receipt picture and submit.
+- Navigate to `Home` and click on 'take a picture' to take a picture of the receipt, review receipt picture and submit.
 - If camera option is not supported on your device, click on 'upload receipt' to upload a picture of the receipt, review receipt picture and submit.
 
 ### Editting Receipts
-- Navigate to `/add-receipt` and fill out the form to submit a receipt.
-- The app will return a unique receipt ID.
+- After processing the uploaded picture, the digital receipt can be edited before saving it.
+- Saving the receipt will redirect to receipts page.
 
 ### Viewing Graphs
-- Go to `/graphs` to view visualizations of receipt data.
+- Go to `/Insights` to view visualizations of receipts' data.
+- first 3 Graph are for total spending by year, month and week.
+- Graph for top selling items.
+- Graph for daily average spending by month.
+- Graph for estimated spending for the upcoming month.
 
 ### Error Handling
 - If you encounter an error (e.g., visiting a non-existent page), a friendly 404 error page will appear.

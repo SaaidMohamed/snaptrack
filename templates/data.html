@@ -7,7 +7,6 @@
 {% block main %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
-    /* Basic responsive layout */
     .dashboard {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -22,12 +21,13 @@
     /* Media query for larger screens */
     @media (min-width: 768px) {
         .dashboard {
-            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Larger minimum width */
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
         }
     }
 </style>
 
 <body onload="fetchData()">
+
     <div class="dashboard">
         <div class="card" id="chart1-container">
             <canvas id="yearChart" width="400" height="200"></canvas>
@@ -49,14 +49,6 @@
         </div>
         <!-- More cards as needed -->
     </div>
-
-
-<!--    Old
-<div  class="LogInContainer">
-
-    <canvas id="myChart" width="400" height="200"></canvas>
-
-</div>-->
 
 </body>
 {% endblock %}

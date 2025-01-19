@@ -9,7 +9,6 @@ const loadingMessage = document.getElementById('loadingMessage');
 const ocrFormBtn = document.getElementById('ocrFormBtn');
 
 
-
 async function handleFormSubmission(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
@@ -64,7 +63,6 @@ async function handleFormSubmission(event) {
     }
 }
 
-
 function previewFile() {
     previewContainer.style.display = 'none';
     errorMessage.style.display = 'none';
@@ -96,7 +94,6 @@ function previewFile() {
         }
     }
 }
-
 
 function confirmImage() {
 
@@ -149,11 +146,9 @@ function confirmImage() {
     
 }
 
-
 function retryUpload() {
     window.location.href = '/';
 }
-
 
 function openCamera() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -242,7 +237,6 @@ function createGraph(type, title, containerId, backgroundColor, borderColor, dat
     });
 }
 
-
 async function fetchData() {
     try {
         const response = await fetch('/data'); // Endpoint to fetch data
@@ -255,7 +249,6 @@ async function fetchData() {
         createGraph('bar', "Top Selling Items", "TsiChart", 'rgba(153, 102, 255, 1)', 'rgba(153, 102, 255, 1)', data.top_selling_items);
         createGraph('bar', "Daily Average Spending by Month", "DsbmChart", 'rgba(255, 99, 132, 1)', 'rgba(255, 99, 132, 1)', data.daily_spending_by_month);
         createGraph('bar', "Estimated spending for the upcoming month", "PnmsChart", 'rgba(255, 206, 86, 1)', 'rgba(255, 206, 86, 1)', data.predicted_next_month_spending);
-        
     } catch (error) {
         console.log('Error fetching data:', error);
     }
