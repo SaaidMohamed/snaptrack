@@ -10,7 +10,7 @@ nav .navbar-brand
 
 .space{
 
-    height: 37.1vh;
+    height: 39.4vh;
 }
 .container {
     text-align: center;
@@ -208,7 +208,7 @@ h1 {
 /* Log In Styles*/
 .LogIncontainer {
     background: #fff;
-    margin: 25px auto;
+    margin: 39.5px auto;
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

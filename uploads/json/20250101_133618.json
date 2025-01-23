@@ -1,14 +1,14 @@
 {
     "ocr_type": "receipts",
-    "request_id": "P_89.187.180.57_m5itpew6_w64",
+    "request_id": "P_93.190.140.103_m65ll23e_bt0",
     "ref_no": "ocr_python_123",
     "file_name": "20250101_133618.png",
-    "request_received_on": 1736033807527,
+    "request_received_on": 1737410889434,
     "success": true,
     "image_width": 1164,
     "image_height": 3656,
     "image_rotation": 0,
-    "recognition_completed_on": 1736033808701,
+    "recognition_completed_on": 1737410892031,
     "receipts": [
         {
             "merchant_name": "MARKET BASKET",
