@@ -1,14 +1,14 @@
 {
     "ocr_type": "receipts",
-    "request_id": "P_95.173.217.71_m62rhk4z_uiv",
+    "request_id": "P_24.61.96.34_m9ycuwf4_611",
     "ref_no": "ocr_python_123",
     "file_name": "20250118_172343.png",
-    "request_received_on": 1737239405364,
+    "request_received_on": 1745680098208,
     "success": true,
     "image_width": 783,
     "image_height": 4032,
     "image_rotation": -0.023,
-    "recognition_completed_on": 1737239406474,
+    "recognition_completed_on": 1745680099338,
     "receipts": [
         {
             "merchant_name": "MARKET BASKET",
@@ -618,131 +618,131 @@
             "payment_details": null,
             "credit_card_type": null,
             "credit_card_number": null,
-            "ocr_text": "     MARKET BASKET\n             \"MORE FOR YOUR DOLLAR\"\n               69 Central Street\n                 Salem, NH 03079\n                 (603) 890-0059\n         Store Director: Brian Casassa\n                 Store: 084\n  Cashier:                  0840559-Giselle B\n  1/12/25                            11:11 AM\n                     Sale\n        EGGS\n  395222145524 YOKE FREE RANGE 15 3.99 F\n        FROZEN FISH\n  610379920085 M.B. SALMON FILLET     9.99 F\n        FROZEN MEAT\n  064563226772 YUMMY DINO BUDD 35OZ   8.99 F\n        FRUIT/COOL WHIP\n  079900001868 WYMAN STRAWBERRY 3LB 8.99 F\n        GROCERY\n  015000070014 GERBER OATMEAL         2.99 F\n               CEREAL\n  851100003336 JUNKLESS HNY           3.99 F\n  015000073657 GER 2ND PR/CIN/OAT     5.37 F\n                3 @ 1.79\n 071022313485 PITTED DATES            5.98 F\n                2 @ 2.99\n  819573011753 HPY TEETHER BAN + SWTP 3.99 F\n  024000524458 DELM DICED MANGO LS    6.00 F\n                2 @ 2/6.00\n 319573011708 H-TOT F + P KWI-KALE    1.50 F\n  819573015928 HAPPY BABY SPR MRN     4.50 F\n               APL/ACIA\n                3 @ 2/3.00\n 850000411593 SK BABY                 7.58 F\n                2 @ 3.79\n  075140245147 CRYSTAL GEYSER 24PK 3.34 F\n 049705343043 MB DISTILLED            3.96 F\n                4 @ 0.99\n 854417002320 BUDDY FRT MULTI 4PK 2.99 F\n 049705113134 MB QUICK OATS           3.99 F\n 024000034094 DELM FTG PEACHES        3.00 F\n 027000852507 HUNT NO SALT SAUCE      3.75 F\n                3 @ 4/5.00\n 049705020913 MB HOT SAUCE            1.50 F\n 819573011739 H-TOT F + P PR BLU SPN  1.50 F\n 048121184070 100% WHEAT MUFFIN       7.98 F\n                2 @ 3.99\n 072427000123 FANTINI SPLIT TOP       6.00 F\n               ROLLS\n                2 @ 2/6.00\n       HABA\n 809219400034 WHITE RAIN              1.29\n 809219000289 WHITE RAIN              1.29\n       MILK\n 079403114867 RH ORIGINAL ORGANIC 11.96 F\n                4 @ 2.99\n       PIZZA\n 072180634290 RB FOUR CHEESE PIZZA 4.99 F\n       PRODUCE DEPT\n 4022          GREEN SEEDLESS GRAPE 7.57 F\n                2.170 @$3.49/lb\n 4635          RED SEEDLESS GRAPES 5.93 F\n                1.700 lb @$3.49/lb\n 033383664002 1LB BUNNY LUV CARROT    0.99 F\n 761635202602 BLACKBERRIES            4.00 F\n                2 @ 2/4.00\n 033383510101 5LB RED POTATOES        3.49 F\n 4065          GREEN PEPPERS          1.71 F\n                1.010 lb @ $1.69/lb\n 853951002025 1LB FLORIDA             3.99 F\n               STRAWBERRIES\n 4225          HASS AVOCADOS          1.50 F\n 4011          BANANAS CHIQUITA       1.40 F\n                2.850 lb @$0.49/lb\n 812049006901 PINT BLUEBERRIES        2.50 F\n 4608          GARLIC                 0.59 F\n                0.170 lb @$3.49/lb\n 049705811160 3LB SWEET POTATOES      2.79 F\n 033383601014 2LB MEDIUM RED ONION    2.99 F\n 091636000021 3LB PEELZ CAL           5.99 F\n               CLEMENTINES\n 4016          RED DELICIOUS APPLES 0.90 F\n                0.910 lb @ $0.99/lb\n 4011          BANANAS CHIQUITA 1.50 F\n                3.070 lb @ $0.49/lb\n 4011          BANANAS CHIQUITA       1.42 F\n                2.890 lb @ $0.49/lb\n 4067          ZUCCHINI SQUASH        1.68 F\n                1.700 lb @ $0.99/lb\n 3421          PERSONAL WATERMELON 5.99 F\n       STORE CUT BEEF\n 202871000000 CAB EXTRA LEAN STEW 5.99 F\n                1 @ 5.99\n       TAX GROCERY\n 037000970576 DAWN                    4.49\n 049705063439 MB DBLE ROLL            1.50\n       VEGETABLES\n 049705693735 MB CUT SQUASH    POLY   2.19 F\n 049705693841 MB BABY BRUSSEL SPRT    3.78 F\n                2 @ 1,89\n 049705693506 MB BROCCOLI FLORET 1.89 F\n               POLY\n 014500012791 BE VEG & GRAIN RICE     1.50 F\n 049705693872 MB ASPARAGUS SPEARS     2.49 F\n 014500021342 BE ASPARAGUS CRM CRT    2.00 F\n               STEAM\n 014500021281 BE MIXED VEGETABLE      3.00 F\n               STEAM\n               2 @ 2/3.00\n 049705693834 MB SHELLED EDAMAME      2.19 F\n              Cash Back ** 4724      20.00\n        SUBTOTAL                       239.35\n        TOTAL                          239.35\n        Debit                          239.35\n        TOTAL TENDERED                 239.35\n        Change                          20.00\n             CARD INFORMATION:",
+            "ocr_text": "     MARKET BASKET\n             \"MORE FOR YOUR DOLLAR\"\n               69 Central Street\n                 Salem, NH 03079\n                 (603) 890-0059\n         Store Director: Brian Casassa\n                 Store: 084\n  Cashier:                  0840559-Giselle B\n  1/12/25                            11:11 AM\n                     Sale\n        EGGS\n  395222145524 YOKE FREE RANGE 15 3.99 F\n        FROZEN FISH\n  610379920085 M.B. SALMON FILLET     9.99 F\n        FROZEN MEAT\n  064563226772 YUMMY DINO BUDD 35OZ   8.99 F\n        FRUIT/COOL WHIP\n  079900001868 WYMAN STRAWBERRY 3LB 8.99 F\n        GROCERY\n  015000070014 GERBER OATMEAL         2.99 F\n               CEREAL\n  851100003336 JUNKLESS HNY           3.99 F\n  015000073657 GER 2ND PR/CIN/OAT     5.37 F\n                3 @ 1.79\n 071022313485 PITTED DATES            5.98 F\n                2 @ 2.99\n  819573011753 HPY TEETHER BAN + SWTP 3.99 F\n  024000524458 DELM DICED MANGO LS    6.00 F\n                2 @ 2/6.00\n 319573011708 H-TOT F + P KWI-KALE    1.50 F\n  819573015928 HAPPY BABY SPR MRN     4.50 F\n               APL/ACIA\n                3 @ 2/3.00\n 850000411593 SK BABY                 7.58 F\n                2 @ 3.79\n  075140245147 CRYSTAL GEYSER 24PK 3.34 F\n  049705343043 MB DISTILLED           3.96 F\n                4 @ 0.99\n 854417002320 BUDDY FRT MULTI 4PK 2.99 F\n 049705113134 MB QUICK OATS           3.99 F\n 024000034094 DELM FTG PEACHES        3.00 F\n 027000852507 HUNT NO SALT SAUCE      3.75 F\n                3 @ 4/5.00\n 049705020913 MB HOT SAUCE            1.50 F\n 819573011739 H-TOT F + P PR BLU SPN  1.50 F\n 048121184070 100% WHEAT MUFFIN       7.98 F\n                2 @ 3.99\n 072427000123 FANTINI SPLIT TOP       6.00 F\n               ROLLS\n                2 @ 2/6.00\n       HABA\n 809219400034 WHITE RAIN              1.29\n 809219000289 WHITE RAIN              1.29\n       MILK\n 079403114867 RH ORIGINAL ORGANIC 11.96 F\n                4 @ 2.99\n       PIZZA\n 072180634290 RB FOUR CHEESE PIZZA 4.99 F\n       PRODUCE DEPT\n 4022          GREEN SEEDLESS GRAPE 7.57 F\n                2.170 @$3.49/lb\n 4635          RED SEEDLESS GRAPES 5.93 F\n                1.700 lb @$3.49/lb\n 033383664002 1LB BUNNY LUV CARROT    0.99 F\n 761635202602 BLACKBERRIES            4.00 F\n                2 @ 2/4.00\n 033383510101 5LB RED POTATOES        3.49 F\n 4065          GREEN PEPPERS          1.71 F\n                1.010 lb @ $1.69/lb\n 853951002025 1LB FLORIDA             3.99 F\n               STRAWBERRIES\n 4225          HASS AVOCADOS          1.50 F\n 4011          BANANAS CHIQUITA       1.40 F\n                2.850 lb @$0.49/lb\n 812049006901 PINT BLUEBERRIES        2.50 F\n 4608          GARLIC                 0.59 F\n                0.170 lb @$3.49/lb\n 049705811160 3LB SWEET POTATOES      2.79 F\n 033383601014 2LB MEDIUM RED ONION    2.99 F\n 091636000021 3LB PEELZ CAL           5.99 F\n               CLEMENTINES\n 4016          RED DELICIOUS APPLES 0.90 F\n                0.910 lb @ $0.99/lb\n 4011          BANANAS CHIQUITA 1.50 F\n                3.070 lb @ $0.49/lb\n 4011          BANANAS CHIQUITA       1.42 F\n                2.890 lb @ $0.49/lb\n 4067          ZUCCHINI SQUASH        1.68 F\n                1.700 lb @ $0.99/lb\n 3421          PERSONAL WATERMELON 5.99 F\n       STORE CUT BEEF\n 202871000000 CAB EXTRA LEAN STEW 5.99 F\n                1 @ 5.99\n       TAX GROCERY\n 037000970576 DAWN                    4.49\n 049705063439 MB DBLE ROLL            1.50\n       VEGETABLES\n 049705693735 MB CUT SQUASH    POLY   2.19 F\n 049705693841 MB BABY BRUSSEL SPRT    3.78 F\n                2 @ 1,89\n 049705693506 MB BROCCOLI FLORET 1.89 F\n               POLY\n 014500012791 BE VEG & GRAIN RICE     1.50 F\n 049705693872 MB ASPARAGUS SPEARS     2.49 F\n 014500021342 BE ASPARAGUS CRM CRT    2.00 F\n               STEAM\n 014500021281 BE MIXED VEGETABLE      3.00 F\n               STEAM\n               2 @ 2/3.00\n 049705693834 MB SHELLED EDAMAME      2.19 F\n              Cash Back ** 4724      20.00\n        SUBTOTAL                       239.35\n        TOTAL                          239.35\n        Debit                          239.35\n        TOTAL TENDERED                 239.35\n        Change                          20.00\n             CARD INFORMATION:",
             "ocr_confidence": 97.87,
             "width": 713,
             "height": 4004,
-            "avg_char_width": 16.5019,
-            "avg_line_height": 26.5914,
+            "avg_char_width": 16.501,
+            "avg_line_height": 26.595,
             "conf_amount": 74,
             "source_locations": {
                 "date": [
                     [
                         {
-                            "y": 352,
-                            "x": 1
+                            "x": 1,
+                            "y": 352
                         },
                         {
-                            "y": 355,
-                            "x": 122
+                            "x": 122,
+                            "y": 355
                         },
                         {
-                            "y": 381,
-                            "x": 121
+                            "x": 121,
+                            "y": 381
                         },
                         {
-                            "y": 378,
-                            "x": 0
+                            "x": 0,
+                            "y": 378
                         }
                     ]
                 ],
                 "total": [
                     [
                         {
-                            "y": 3755,
-                            "x": 666
+                            "x": 666,
+                            "y": 3755
                         },
                         {
-                            "y": 3754,
-                            "x": 772
+                            "x": 772,
+                            "y": 3754
                         },
                         {
-                            "y": 3780,
-                            "x": 772
+                            "x": 772,
+                            "y": 3780
                         },
                         {
-                            "y": 3781,
-                            "x": 666
+                            "x": 666,
+                            "y": 3781
                         }
                     ]
                 ],
                 "subtotal": [
                     [
                         {
-                            "y": 3722,
-                            "x": 662
+                            "x": 662,
+                            "y": 3722
                         },
                         {
-                            "y": 3722,
-                            "x": 772
+                            "x": 772,
+                            "y": 3722
                         },
                         {
-                            "y": 3748,
-                            "x": 773
+                            "x": 773,
+                            "y": 3748
                         },
                         {
-                            "y": 3748,
-                            "x": 663
+                            "x": 663,
+                            "y": 3748
                         }
                     ]
                 ],
                 "merchant_name": [
                     [
                         {
-                            "y": 33,
-                            "x": 21
+                            "x": 21,
+                            "y": 33
                         },
                         {
-                            "y": 32,
-                            "x": 653
+                            "x": 653,
+                            "y": 32
                         },
                         {
-                            "y": 93,
-                            "x": 653
+                            "x": 653,
+                            "y": 93
                         },
                         {
-                            "y": 94,
-                            "x": 21
+                            "x": 21,
+                            "y": 94
                         }
                     ]
                 ],
                 "doc": [
                     [
                         {
-                            "y": -161,
-                            "x": -69
+                            "x": -69,
+                            "y": -161
                         },
                         {
-                            "y": -179,
-                            "x": 714
+                            "x": 714,
+                            "y": -179
                         },
                         {
-                            "y": 4224,
-                            "x": 815
+                            "x": 815,
+                            "y": 4224
                         },
                         {
-                            "y": 4241,
-                            "x": 31
+                            "x": 31,
+                            "y": 4241
                         }
                     ]
                 ],
                 "merchant_address": [
                     [
                         {
-                            "y": 135,
-                            "x": 188
+                            "x": 188,
+                            "y": 135
                         },
                         {
-                            "y": 135,
-                            "x": 473
+                            "x": 473,
+                            "y": 135
                         },
                         {
-                            "y": 161,
-                            "x": 473
+                            "x": 473,
+                            "y": 161
                         },
                         {
-                            "y": 160,
-                            "x": 188
+                            "x": 188,
+                            "y": 160
                         }
                     ]
                 ]

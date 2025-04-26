@@ -17,7 +17,7 @@ def db_execute(query, params=None):
             dbname="TestDB",
             user="postgres",
             password="password",
-            host="localhost",
+            host="db",
             port="5432"
         )
         with conn.cursor(cursor_factory=RealDictCursor) as cursor:
@@ -49,7 +49,7 @@ def insert_receipt_and_items_to_db(filtered_data, user_id):
             dbname="TestDB",
             user="postgres",
             password="password",
-            host="localhost",
+            host="db",
             port="5432"
         )
         cursor = conn.cursor()
@@ -117,7 +117,7 @@ def insert_receipt_and_items_json_to_db(validated_receipt, user_id):
             dbname="TestDB",
             user="postgres",
             password="password",
-            host="localhost",
+            host="db",
             port="5432"
         )
         cursor = conn.cursor()
@@ -183,7 +183,7 @@ def fetch_receipt_and_items_json_from_db(user_id):
         dbname="TestDB",
         user="postgres",
         password="password",
-        host="localhost",
+        host="db",
         port="5432"
     )
     cursor = conn.cursor()
@@ -242,4 +242,3 @@ def fetch_receipt_and_items_json_from_db(user_id):
     print(data)
     # Convert data to a list
     return list(data.values())
-
